@@ -1,9 +1,89 @@
 @media (max-width: 575px) {}
 
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
   .section-header p {
     font-size: 28px;
     line-height: 32px;
+  }
+
+  .first_box, .second_box, .third_box {
+    margin: 0 0 20px 0 !important;
+  }
+
+  .login_sec:last-child {
+    margin: 0;
+  }
+
+  .slider_container {
+    margin: 15px 0 20px 0;
+  }
+
+  .slider_container .mySwiper .content .icons {
+    text-align: center;
+    margin: 0 0 0 0;
+  }
+
+  .footer .footer-top .footer-info {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .footer .group_wrapper .flex_group {
+    display: block;
+    text-align: center;
+  }
+
+  .footer .group_wrapper .flex_group span {
+    display: none;
+  }
+
+  .footer .group_wrapper .flex_group p>span {
+    display: block;
+  }
+
+  .footer .group_wrapper .flex_group h6 {
+    margin: 0 0 20px 0;
+  }
+
+  .footer .group_wrapper .flex_group p.desc_group {
+    margin: 0 0 20px 0;
+  }
+
+  .footer .group_wrapper .flex_group p.desc_group span {
+    margin: 0 0 10px 0;
+  }
+
+  .footer .group_wrapper .flex_group p.desc_group:last-child {
+    margin: 0;
+  }
+
+  .footer_bottom {
+    height: auto;
+    padding: 15px 0px;
+  }
+
+  .footer_bottom .right_wrapp .image_box {
+    padding: 0 15px 0 15px;
+  }
+
+  .footer_bottom .right_wrapp .image_box img {
+    width: 38px;
+  }
+
+  .footer_bottom .left_wrapp h5 {
+    font-size: 14px;
+  }
+
+  .footer_bottom .left_wrapp {
+    margin: 0 0 15px 0;
+  }
+
+  .footer_bottom .left_wrapp h5 span {
+    display: none;
+  }
+
+  .footer_bottom .left_wrapp .flex_link p:first-child {
+    margin: 0;
   }
 }
 
@@ -28,6 +108,7 @@
   .footer_bottom .left_wrapp h5 {
     display: flex;
     align-items: center;
+    font-size: 14px;
   }
 
   .footer_bottom .left_wrapp {
@@ -50,6 +131,58 @@
   .footer .footer-top .footer-info {
     text-align: center;
   }
+
+  .footer .group_wrapper .flex_group h6 {
+    font-size: 17px;
+    line-height: 21px;
+  }
+
+  .footer .group_wrapper .flex_group p.desc_group {
+    font-size: 16px;
+  }
+
+  .footer .group_wrapper .flex_group span {
+    margin: 0px 12px 0 12px;
+  }
+
+  .footer .group_wrapper .flex_group p.desc_group span {
+    font-size: 17px;
+  }
+
+  .footer_bottom .left_wrapp .flex_link p {
+    font-size: 13px;
+  }
+
+  .footer_bottom .left_wrapp h5 span {
+    display: none;
+  }
+
+  .footer_bottom .right_wrapp .image_box {
+    padding: 0 15px 0 15px;
+  }
+
+  .footer_bottom .right_wrapp .image_box img {
+    width: 38px;
+  }
+
+  .login_sec:last-child {
+    margin: 0;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 @media (max-width: 991px) {
