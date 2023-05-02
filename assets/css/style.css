@@ -780,7 +780,7 @@ section {
 .footer_bottom {
   width: 100%;
   background-color: #D9D9D9;
-  margin: 49px 0 0 0;
+  margin: 35px 0 0 0;
   height: 70px;
   display: flex;
   align-items: center;
@@ -832,6 +832,10 @@ section {
   margin-left: 0;
   color: var(--black);
 
+}
+
+.footer .footer-top .footer-info {
+  text-align: center;
 }
 
 .footer .footer-top .footer-info img {
@@ -1138,4 +1142,347 @@ section {
   font-size: 19px;
   line-height: 18px;
   color: var(--navy_blue);
+}
+
+/* ************************* */
+
+/* ************IJP Detail Page Css STarts************* */
+
+.job_detail_wrapper {
+  padding: 15px 0;
+  position: relative;
+}
+
+.job_detail_wrapper .top_title {
+  margin: 0 22px 13px 0;
+}
+
+
+.job_detail_wrapper .top_title h6 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: black;
+  text-align: left;
+  margin: 0 0 14px 27px;
+  text-transform: capitalize;
+}
+
+.divider {
+  border: 1px solid var(--border_color);
+}
+
+.divider_2 {
+  border: 1px solid #FDE3E3;
+}
+
+.job_insights {
+  margin: 20px 20px 20px 20px;
+}
+
+.job_insights .insight_row {
+  margin: 0;
+}
+
+.flex_sight {
+  display: flex;
+  align-items: center;
+  margin: 0 0 25px 0;
+}
+
+.col-lg-4:last-of-type .flex_sight {
+  margin: 0 0 0 0;
+}
+
+.bg_icon {
+  background: rgba(217, 217, 217, 0.69);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg_icon i {
+  font-size: 21px;
+  color: black;
+}
+
+.detail_content {
+  display: block;
+  margin: 0 0 0 15px;
+  text-align: left;
+}
+
+.detail_content h6 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #10002E;
+}
+
+.detail_content p {
+  margin: 0;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  text-transform: capitalize;
+  color: #F99B1F;
+}
+
+.Key_content {
+  margin: 15px 28px 15px 28px;
+}
+
+.Key_content h6 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: capitalize;
+  color: #000000;
+  text-align: left;
+  margin: 0 0 10px 0;
+}
+
+
+.Key_content .content_list {
+  margin: 0;
+  text-align: left;
+
+}
+
+.Key_content .content_list ul {
+  padding: 0 0 0 0;
+  list-style: none;
+}
+
+.Key_content .content_list ul li {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: inherit;
+  color: rgba(85, 85, 85, 0.71);
+  margin: 0 10px 10px 0;
+}
+
+.Key_content .content_list ul li i {
+  margin: 0 10px 0 0;
+}
+
+.apps_steps {
+  margin: 15px 28px 15px 28px;
+}
+
+.apps_steps h6 {
+  text-align: left;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: capitalize;
+  color: #000000;
+  margin-bottom: 18px;
+}
+
+.apps_steps .step_sec {
+  background: #F3F4F6;
+  border-radius: 8px;
+  display: block;
+  overflow: auto;
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.25));
+  margin: 0 0 25px 0;
+}
+
+.apps_steps .step_sec:last-child {
+  margin: 0 0 0 0;
+}
+
+.apps_steps .step_sec h6 {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 23px;
+  text-transform: capitalize;
+  color: #000000;
+  text-align: left;
+  margin: 18px 10px 18px 20px;
+}
+
+.apps_steps .step_sec .steps_content {
+  text-align: left;
+  padding: 10px 10px;
+}
+
+.apps_steps .step_sec .steps_content ul {
+  padding: 0 0 0 10px;
+  margin: 0 10px 10px 0;
+}
+
+.apps_steps .step_sec .steps_content ul li {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: inherit;
+  color: rgba(85, 85, 85, 0.71);
+  margin: 0 10px 10px 0;
+  list-style: none;
+}
+
+.apps_steps .step_sec .steps_content ul li:last-child {
+  margin: 0 0 0 0;
+}
+
+.apps_steps .step_sec .steps_content ul li i {
+  margin: 0 10px 0 0;
+}
+
+/* ****************** */
+
+.brand_sec {
+  margin: 0 0;
+}
+
+.brand_sec h2 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #3C486B;
+  margin: 0;
+  padding: 0 20px 15px 20px;
+  background: none;
+  -webkit-text-fill-color: unset;
+  text-align: left;
+}
+
+.brand_sec h2 i {
+  color: #3C486B;
+  margin: 0 10px 0 0;
+}
+
+.brand_content h3 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--primary);
+  text-align: left;
+  padding: 10px 20px 10px 20px;
+  margin: 0;
+}
+
+
+.brand_content h3 i {
+  color: var(--primary);
+  margin: 0 10px 0 0;
+}
+
+.brand_content ul {
+  padding: 5px 18px 0 18px;
+  margin: 0;
+
+}
+
+.brand_content ul li {
+  list-style: none;
+  margin: 0 0 10px 0;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: left;
+  color: #9D9D9D;
+}
+
+.brand_content ul li:last-child {
+  margin: 0;
+}
+
+.logos_list_wrapper {
+  padding: 10px 13px 0 13px;
+}
+
+.logos_list_wrapper .logo_row {
+  margin: 0;
+  padding: 0;
+}
+
+.logos_list_wrapper .main_box {
+  padding: 15px 0;
+}
+
+.logos_list_wrapper .main_box .logo_whiteBox .ImageBox img {
+  width: 100%;
+}
+
+.logos_list_wrapper .main_box .logo_whiteBox {
+  background-color: var(--white);
+  border: 1px solid #EAEAEA;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
+  padding: 35px 30px;
+  margin-bottom: 20px;
+  height: 225px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.logos_list_wrapper .main_box .long_whitebox {
+  height: 155px;
+}
+
+.logos_list_wrapper .bottom_buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logos_list_wrapper .main_box .bottom_buttons p {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: capitalize;
+  color: #9D9D9D;
+  margin: 0 5px 0 0;
+}
+
+.logos_list_wrapper .main_box .bottom_buttons .btn_pdf, .logos_list_wrapper .bottom_buttons .btn_cdr {
+
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  max-width: 100px;
+  display: block;
+  padding: 6px 30px;
+  margin: 0 5px 0 5px;
+}
+
+.logos_list_wrapper .main_box .bottom_buttons .btn_pdf {
+  background: #BC2A2A;
+}
+
+.logos_list_wrapper .bottom_buttons .btn_cdr {
+  background: var(--primary);
+}
+
+
+/* ********************* */
+
+
+.Id_card_page .logos_list_wrapper .main_box .logo_whiteBox {
+  height: auto;
+  padding: 15px 15px;
+}
+
+.Id_card_page .second_box {
+  margin-bottom: 25px;
+}
+
+.Id_card_page .second_box:last-child {
+  margin-bottom: 0;
 }
