@@ -1486,3 +1486,199 @@ section {
 .Id_card_page .second_box:last-child {
   margin-bottom: 0;
 }
+
+/* ****************** */
+
+
+.visiting_card_page .logos_list_wrapper .main_box .logo_whiteBox {
+  height: auto;
+  padding: 15px 15px;
+}
+
+.visiting_card_page .second_box {
+  margin-bottom: 25px;
+}
+
+.visiting_card_page .second_box:last-child {
+  margin-bottom: 0;
+}
+
+/* ****************** */
+
+
+.envelop_page .logos_list_wrapper .main_box .logo_whiteBox {
+  padding: 15px 15px;
+  height: auto;
+}
+
+.envelop_page .second_box {
+  margin-bottom: 25px;
+}
+
+.envelop_page .second_box:last-child {
+  margin-bottom: 0;
+}
+
+/* ****************** */
+
+.letter_head_page .logos_list_wrapper .main_box .logo_whiteBox {
+  padding: 15px 15px;
+  height: auto;
+}
+
+.letter_head_page .second_box {
+  margin-bottom: 25px;
+}
+
+.letter_head_page .second_box:last-child {
+  margin-bottom: 0;
+}
+
+/* **************** */
+
+.second_box .listing_doc_sec {
+  margin: 15px 15px;
+}
+
+.second_box .listing_doc_sec .doc_list_row {
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  column-gap: 15px;
+  flex-wrap: wrap;
+}
+
+.second_box .listing_doc_sec .doc_list_row .doc_box {
+  margin: 0 0 20px 0;
+  background: var(--white);
+  border: 1px solid #EAEAEA;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
+  padding: 10px 5px;
+  display: block;
+  height: auto;
+  width: 100px;
+  word-wrap: break-word;
+}
+
+.second_box .listing_doc_sec .doc_list_row .doc_box img {
+  margin: 0 0 10px 0;
+  object-fit: cover;
+  width: 50px;
+}
+
+.second_box .listing_doc_sec .doc_list_row .doc_box p {
+  margin: 0;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #7E7B7B
+}
+
+
+.av_page .video_container {
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+.av_page .second_box {
+  margin: 0;
+  padding: 0;
+}
+
+.av_page .second_box #bigVideo {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.av_page .bottom-btn {
+  margin: 0 0 20px 0;
+}
+
+.av_page .bottom-btn .btn_download {
+  background: #F99D1B;
+  border-radius: 4px;
+  margin: 0 0 10px 0;
+  padding: 8px 15px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #333333;
+  display: block;
+  max-width: 115px;
+  margin: 0 auto 10px;
+  transition: all 0.4s;
+}
+
+.av_page .bottom-btn .btn_download:hover {
+  background-color: #d27b00;
+  color: black;
+}
+
+/* ************************ */
+
+.remark_sec {
+  margin: 0;
+}
+
+.remark_sec .login_review {
+  margin: 0;
+}
+
+.remark_sec .login_review .form_remarking {
+  margin: 30px;
+}
+
+.remark_sec .login_review .form_remarking .form_remark_row {
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.remark_sec .login_review .form_remarking .form_remark_row .col-lg-8{
+  padding: 0;
+}
+
+.remark_sec .login_review .form_remarking .form_remark_row .inputBox_col {
+  margin: 0;
+}
+
+.remark_sec .login_review .form_remarking .form_remark_row .lbl_inputbox {
+  text-align: left;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #8B8B8B;
+  display: block;
+}
+
+.remark_sec .login_review .form_remarking .form_remark_row .form-control {
+  border: 1px solid #CDCDCD;
+  border-radius: 4px;
+  height: 40px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #8B8B8B;
+}
+
+.remark_sec .login_review .form_remarking .form_remark_row .form-control:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.remark_sec .login_review .form_remarking .form_remark_row .form_btns {
+  margin: 0 auto 0 auto;
+}
+
+.remark_sec .login_review .form_remarking .form_remark_row .btn_primary {
+  margin: 0;
+  max-width: 185px;
+}
