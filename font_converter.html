@@ -5,7 +5,7 @@
         <meta charset="utf-8" />
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-        <title>Letter Head </title>
+        <title>Font Converter</title>
         <meta content="" name="description" />
         <meta content="" name="keywords" />
 
@@ -21,7 +21,7 @@
         <!-- Vendor CSS Files -->
         <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
         <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
-        
+
         <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
         <link href="https://vjs.zencdn.net/8.3.0/video-js.css" rel="stylesheet" />
 
@@ -214,7 +214,6 @@
                                         <li><a class="dropdown-item" href="#">Divya Marathi</a></li>
                                     </ul>
                                 </li>
-
                                 <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#">Samvad</a>
                                     <ul class="dropdown-menu">
                                         <li class="nav-item dropdown"><a class="dropdown-item dropdown-toggle" href="#">Hindi</a>
@@ -453,80 +452,96 @@
         </div>
         <!-- End Header -->
 
-        <main id="main" class="letter_head_page">
+        <main id="main" class="font_converter">
             <div class="section_main">
                 <div class="container">
                     <div class="main_row row">
                         <div class="col-lg-3 col-md-3 col-sm-12 ">
                             <div class="first_box">
-                                <div class="brand_sec">
-                                    <h2><i class="bi bi-box"></i> Brand</h2>
-                                    <div class="divider_2"></div>
+                                <h2>From the <br>Chairman’s Desk</h2>
 
-                                    <div class="brand_content">
-                                        <h3><i class="bi bi-arrow-return-right"></i> TVC</h3>
-
-                                        <ul>
-                                            <li><a href="#"><i class="bi bi-chevron-right"></i> Gillitte “Safalta Apni Mutthi Me”</a></li>
-                                            <li><a href="#"><i class="bi bi-chevron-right"></i> Punjab Camp- “Sahi Padho Sahi chuno”</a></li>
-                                            <li><a href="#"><i class="bi bi-chevron-right"></i> Maha Recognition - Maha Kubh</a></li>
-                                            <li><a href="#"><i class="bi bi-chevron-right"></i> Char Kahanaiyaan , Ek Ant</a></li>
-                                            <li><a href="#"><i class="bi bi-chevron-right"></i> Sarthak Deepawali 2023</a></li>
-                                            <li><a href="#"><i class="bi bi-chevron-right"></i> Char Kahanaiyaan , Ek Ant</a></li>
-                                            <li><a href="#"><i class="bi bi-chevron-right"></i> Bhaskarmay Simhastha 2016</a></li>
-                                            <li><a href="#"><i class="bi bi-chevron-right"></i> Jay Satyagrah - Akshay Kumar</a></li>
-                                            <li><a href="#"><i class="bi bi-chevron-right"></i> Dainik Divya Marathi - TVC 1</a></li>
-                                        </ul>
-                                    </div>
+                                <div class="Center_img">
+                                    <img src="assets/img/ceo.png" class="img-fluid" alt="CEO Image" />
                                 </div>
 
+                                <div class="slider_container">
+                                    <div class="swiper mySwiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="content">
+                                                    <p class="icons"><i class="bi bi-quote"></i></p>
+                                                    <p>TO BE THE LARGEST <br>
+                                                        AND MOST ADMIRED LANGUAGE <br>
+                                                        MEDIA BRAND ENABLING <br>
+                                                        SOCIO-ECONOMIC CHANGE.</p>
+                                                </div>
 
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="content">
+                                                    <p class="icons"><i class="bi bi-quote"></i></p>
+                                                    <p>TO BE THE LARGEST <br>
+                                                        AND MOST ADMIRED LANGUAGE <br>
+                                                        MEDIA BRAND ENABLING <br>
+                                                        SOCIO-ECONOMIC CHANGE.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+
+                                <div class="bottom_part">
+                                    <h2>From the MD’s Desk</h2>
+                                    <div class="video_container">
+                                        <button onclick="playPause1()" class="icon_play"><i class="bi bi-play-circle"></i></button>
+                                        <video id="video1" poster="assets/img/videobg.png">
+                                            <source src="assets/mov_bbb.mp4" type="video/mp4">
+                                            <source src="assets/img/videobg.png" type="video/ogg">
+                                            Your browser does not support HTML video.
+                                        </video>
+                                    </div>
+
+
+                                </div>
                             </div>
                         </div>
                         <div class="col-lg-9 col-md-9 col-sm-12">
                             <div class="second_box">
                                 <div class="inner_box">
                                     <div class="sec_header">
-                                        <h6><i class="bi bi-envelope-paper"></i> Letter Head </h6>
+                                        <h6><i class="bi bi-arrow-repeat"></i> Font Converter</h6>
                                     </div>
+                                    <div class="convert_sec">
+                                        <div class="tab_sec">
+                                            <div class="custom_tabs">
+                                                <ul class="tabs">
+                                                    <li class="active" rel="tab1">Bhaskar to Unicode Converter</li>
+                                                    <li rel="tab2">Unicode to Bhaskar Converter</li>
+                                                    <li rel="tab3">Kriti to Unicode Converter</li>
+                                                </ul>
+                                                <div class="tab_container">
+                                                    <h3 class="d_active tab_drawer_heading" rel="tab1">Tab 1</h3>
+                                                    <div id="tab1" class="tab_content">
+                                                        <h2>Tab 1 </h2>
+                                                    </div>
+                                                    <!-- #tab1 -->
+                                                    <h3 class="tab_drawer_heading" rel="tab2">Tab 2</h3>
+                                                    <div id="tab2" class="tab_content">
+                                                        <h2>Tab 2 </h2>
+                                                    </div>
+                                                    <!-- #tab2 -->
+                                                    <h3 class="tab_drawer_heading" rel="tab3">Tab 3</h3>
+                                                    <div id="tab3" class="tab_content">
+                                                        <h2>Tab 3 </h2>
+                                                    </div>
 
-                                    <div class="logos_list_wrapper">
-                                        <div class="row logo_row">
-                                            <div class="col-lg-6 col-md-6 col-12">
-                                                <div class="main_box">
-                                                    <div class="logo_whiteBox">
-                                                        <div class="ImageBox">
-                                                            <img src="assets/img/brand_logos/artworks/letter/L1.jpg" class="img-fluid" alt="logo image">
-                                                        </div>
-                                                    </div>
-                                                    <div class="bottom_buttons">
-                                                        <p>Download</p>
-                                                        <a href="" class="btn_pdf">PDF</a>
-                                                        <a href="" class="btn_cdr">CDR</a>
-                                                    </div>
                                                 </div>
                                             </div>
-
-
-
-                                            <div class="col-lg-6 col-md-6 col-12">
-                                                <div class="main_box">
-                                                    <div class="logo_whiteBox">
-                                                        <div class="ImageBox">
-                                                            <img src="assets/img/brand_logos/artworks/letter/L2.jpg" class="img-fluid" alt="logo image">
-                                                        </div>
-                                                    </div>
-                                                    <div class="bottom_buttons">
-                                                        <p>Download</p>
-                                                        <a href="" class="btn_pdf">PDF</a>
-                                                        <a href="" class="btn_cdr">CDR</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
 
@@ -537,82 +552,83 @@
         <!-- End #main -->
 
         <!-- ======= Footer ======= -->
-    <footer id="footer" class="footer">
-        <div class="container">
-          <div class="footer-top">
-            <div class="row align-items-center justify-content-center footer_top_row">
-              <div class="col-lg-2 col-md-4 footer-info col-6">
-                <img src="assets/img/footer/dainik_bhaskar_logo.svg" class="img-fluid" alt="footer Image" />
-              </div>
-              <div class="col-lg-2 col-md-4 footer-info col-6">
-                <img src="assets/img/footer/divya_bhaskar_logo.svg" class="img-fluid" alt="footer Image" />
-              </div>
-              <div class="col-lg-2 col-md-4 footer-info col-6">
-                <img src="assets/img/footer/divya_marathi_logo.svg" class="img-fluid" alt="footer Image" />
-              </div>
-              <div class="col-lg-1 col-md-4 footer-info col-6">
-                <img src="assets/img/footer/fm.svg" class="img-fluid" alt="footer Image" />
-              </div>
-              <div class="col-lg-1 col-md-4 footer-info col-6">
-                <img src="assets/img/footer/dainik.svg" class="img-fluid" alt="footer Image" />
-              </div>
-              <div class="col-lg-1 col-md-4 footer-info col-6">
-                <img src="assets/img/footer/divya.svg" class="img-fluid" alt="footer Image" />
-              </div>
-            </div>
-  
-            <div class="group_wrapper">
-              <div class="flex_group">
-                <h6>India’s Largest Newspaper Group</h6>
-                <span>|</span>
-                <p class="desc_group"><span>12</span> States</p>
-                <span>|</span>
-                <p class="desc_group"><span>61</span> Editions</p>
-                <span>|</span>
-                <p class="desc_group"><span>03</span> Languages</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="footer_bottom">
-          <div class="container">
-            <div class="row footer_bottom_row">
-              <div class="col-lg-8 col-md-12">
-                <div class="left_wrapp">
-                  <h5>IT Support Contacts <span> | </span></h5>
-                  <div class="flex_link">
-                    <p>IT Help Desk: <span> 3010</span> </p>
-                    <p>Matrix Help: <span> 4139</span> </p>
-                    <p>SAP: <span> 1177</span> </p>
-                    <p>VDI: <span> 02266200820</span> </p>
-                    <p>Online Support </p>
-                  </div>
+        <footer id="footer" class="footer">
+            <div class="container">
+                <div class="footer-top">
+                    <div class="row align-items-center justify-content-center footer_top_row">
+                        <div class="col-lg-2 col-md-4 footer-info col-6">
+                            <img src="assets/img/footer/dainik_bhaskar_logo.svg" class="img-fluid" alt="footer Image" />
+                        </div>
+                        <div class="col-lg-2 col-md-4 footer-info col-6">
+                            <img src="assets/img/footer/divya_bhaskar_logo.svg" class="img-fluid" alt="footer Image" />
+                        </div>
+                        <div class="col-lg-2 col-md-4 footer-info col-6">
+                            <img src="assets/img/footer/divya_marathi_logo.svg" class="img-fluid" alt="footer Image" />
+                        </div>
+                        <div class="col-lg-1 col-md-4 footer-info col-6">
+                            <img src="assets/img/footer/fm.svg" class="img-fluid" alt="footer Image" />
+                        </div>
+                        <div class="col-lg-1 col-md-4 footer-info col-6">
+                            <img src="assets/img/footer/dainik.svg" class="img-fluid" alt="footer Image" />
+                        </div>
+                        <div class="col-lg-1 col-md-4 footer-info col-6">
+                            <img src="assets/img/footer/divya.svg" class="img-fluid" alt="footer Image" />
+                        </div>
+                    </div>
+
+                    <div class="group_wrapper">
+                        <div class="flex_group">
+                            <h6>India’s Largest Newspaper Group</h6>
+                            <span>|</span>
+                            <p class="desc_group"><span>12</span> States</p>
+                            <span>|</span>
+                            <p class="desc_group"><span>61</span> Editions</p>
+                            <span>|</span>
+                            <p class="desc_group"><span>03</span> Languages</p>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="col-lg-4 padding_left col-md-12">
-                <div class="right_wrapp">
-                  <div class="image_box">
-                    <img src="assets/img/footer/customer-service.svg" class="img-fluid" />
-                    <p>Help Desk</p>
-                  </div>
-                  <div class="image_box">
-                    <img src="assets/img/footer/education.svg" class="img-fluid" />
-                    <p>Knowledge Bhaskar</p>
-                  </div>
-                  <div class="image_box">
-                    <img src="assets/img/footer/advertising.svg" class="img-fluid" />
-                    <p>Whistle Blowing Policy</p>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </footer>
-      <!-- End Footer -->
+            <div class="footer_bottom">
+                <div class="container">
+                    <div class="row footer_bottom_row">
+                        <div class="col-lg-8 col-md-12">
+                            <div class="left_wrapp">
+                                <h5>IT Support Contacts <span> | </span></h5>
+                                <div class="flex_link">
+                                    <p>IT Help Desk: <span> 3010</span> </p>
+                                    <p>Matrix Help: <span> 4139</span> </p>
+                                    <p>SAP: <span> 1177</span> </p>
+                                    <p>VDI: <span> 02266200820</span> </p>
+                                    <p>Online Support </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 padding_left col-md-12">
+                            <div class="right_wrapp">
+                                <div class="image_box">
+                                    <img src="assets/img/footer/customer-service.svg" class="img-fluid" />
+                                    <p>Help Desk</p>
+                                </div>
+                                <div class="image_box">
+                                    <img src="assets/img/footer/education.svg" class="img-fluid" />
+                                    <p>Knowledge Bhaskar</p>
+                                </div>
+                                <div class="image_box">
+                                    <img src="assets/img/footer/advertising.svg" class="img-fluid" />
+                                    <p>Whistle Blowing Policy</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
 
         <!-- Back to Top -->
         <a href="#" id="backtop" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
 
         <!-- Vendor JS Files -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" type="text/javascript"></script>

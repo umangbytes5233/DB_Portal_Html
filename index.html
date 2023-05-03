@@ -3,15 +3,32 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
     <title>Home</title>
-    <meta content="" name="description" />
-    <meta content="" name="keywords" />
+    <meta name="description" content="Description of the page less than 150 characters" />
+    <meta name="keywords" content="Description of the page less than 150 characters" />
 
     <!-- Favicons -->
-    <link href="assets/img/favicon-16x16.png" rel="icon" />
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="icon" type="image/png" href="assets/img/favicon-16x16.png">
+
+    <!-- Apple Touch Icon (at least 200x200px) -->
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+    <!-- To run web application in full-screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Has no effect unless you have the previous meta tag -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Microsoft Tiles -->
+    <meta name="msapplication-config" content="browserconfig.xml">
+
+    <!-- Helps prevent duplicate content issues -->
+    <link rel="canonical" href="#">
+
+    <!-- ------- Checklist COntinue -->
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -50,7 +67,7 @@
           </div>
         </div>
       </div>
-      
+
       <!-- Navbar -->
       <div class="main_nav">
         <div class="container">
@@ -131,7 +148,7 @@
                     </li>
 
                     <li><a class="dropdown-item" href="#"><i class="bi bi-file-earmark-pdf-fill"></i> Guidelines</a></li>
-                    <li><a class="dropdown-item" href="#"><i class="bi bi-file-earmark-pdf-fill"></i> Annexure</a></li>
+                    <li><a class="dropdown-item" href="documents_list.html"><i class="bi bi-file-earmark-pdf-fill"></i> Annexure</a></li>
                     <li><a class="dropdown-item" href="#"><i class="bi bi-file-earmark-pdf-fill"></i> HONO HR</a></li>
                     <li><a class="dropdown-item" href="#"><i class="bi bi-file-earmark-pdf-fill"></i> Guest Houses</a></li>
                     <li><a class="dropdown-item" href="#"><i class="bi bi-file-earmark-pdf-fill"></i> Whistle- Blowing Policy</a></li>
@@ -147,9 +164,9 @@
                     <li><a class="dropdown-item" href="#">Qlik View</a></li>
                     <li><a class="dropdown-item" href="#">Web DSR Queries</a></li>
                     <li><a class="dropdown-item" href="#">Qlik View Queries</a></li>
-                    <li><a class="dropdown-item" href="#">Market Outlook</a></li>
+                    <li><a class="dropdown-item" href="market_outlook.html">Market Outlook</a></li>
                     <li><a class="dropdown-item" href="#">C-POD</a></li>
-                    <li><a class="dropdown-item" href="#">Rate Card</a></li>
+                    <li><a class="dropdown-item" href="rating_card.html">Rate Card</a></li>
                   </ul>
                 </li>
 
@@ -163,7 +180,7 @@
                         <li><a class="dropdown-item" href="#">App Guidline</a></li>
                       </ul>
                     </li>
-                    <li><a class="dropdown-item" href="#">Font Converter</a></li>
+                    <li><a class="dropdown-item" href="font_converter.html">Font Converter</a></li>
 
                   </ul>
                 </li>
@@ -403,7 +420,7 @@
                       <ul class="dropdown-menu">
                         <li class="nav-item dropdown"><a class="dropdown-item dropdown-toggle" href="#">Ad Sales</a>
                           <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-file-earmark-pdf-fill"></i> Policies & Process </a></li>
+                            <li><a class="dropdown-item" href="policy.html"><i class="bi bi-file-earmark-pdf-fill"></i> Policies & Process </a></li>
                             <li><a class="dropdown-item" href="documents_list.html"><i class="bi bi-file-earmark-pdf-fill"></i> Templates</a></li>
 
                           </ul>
@@ -490,15 +507,13 @@
                 <div class="bottom_part">
                   <h2>From the MD’s Desk</h2>
                   <div class="video_container">
-                    <button onclick="playPause1()" class="icon_play"><i class="bi bi-play-circle"></i></button>
+                    <button class="icon_play" data-bs-toggle="modal" data-bs-target="#big_video"><i class="bi bi-play-circle"></i></button>
                     <video id="video1" poster="assets/img/videobg.png">
                       <source src="assets/mov_bbb.mp4" type="video/mp4">
                       <source src="assets/img/videobg.png" type="video/ogg">
                       Your browser does not support HTML video.
                     </video>
                   </div>
-
-
                 </div>
               </div>
             </div>
@@ -506,12 +521,10 @@
               <div class="second_box">
 
                 <div class="video_container">
-                  <button onclick="playPause()" class="icon_play"><i class="bi bi-play-circle"></i></button>
-                  <video id="bigVideo" poster="assets/img/bgvideo.png">
-                    <source src="assets/mov_bbb.mp4" type="video/mp4">
-                    <source src="assets/img/videobg.png" type="video/ogg">
-                    Your browser does not support HTML video.
-                  </video>
+                  <button data-bs-toggle="modal" data-bs-target="#big_video" class="icon_play"><i class="bi bi-play-circle"></i></button>
+                  <div class="center_video_image">
+                    <img src="assets/img/bgvideo.png" class="img-fluid" />
+                  </div>
                 </div>
 
                 <div class="Listing_section">
@@ -522,36 +535,36 @@
                   <div class="job_list_wrapper">
                     <div class="job_box">
                       <div class="title_left">
-                        <a href="">Position of city chief - Ambala</a>
+                        <a href="ijp_detail.html">Position of city chief - Ambala</a>
                         <p>27-Jan-2023</p>
                       </div>
-                      <a href="" class="View_detail">View Detail</a>
+                      <a href="ijp_detail.html" class="View_detail">View Detail</a>
                     </div>
                     <div class="job_box">
                       <div class="title_left">
-                        <a href="">Position of city chief - Ambala</a>
+                        <a href="ijp_detail.html">Position of city chief - Ambala</a>
                         <p>27-Jan-2023</p>
                       </div>
-                      <a href="" class="View_detail">View Detail</a>
+                      <a href="ijp_detail.html" class="View_detail">View Detail</a>
                     </div>
                     <div class="job_box">
                       <div class="title_left">
-                        <a href="">Position of city chief - Ambala</a>
+                        <a href="ijp_detail.html">Position of city chief - Ambala</a>
                         <p>27-Jan-2023</p>
                       </div>
-                      <a href="" class="View_detail">View Detail</a>
+                      <a href="ijp_detail.html" class="View_detail">View Detail</a>
                     </div>
                     <div class="job_box">
                       <div class="title_left">
-                        <a href="">Position of city chief - Ambala</a>
+                        <a href="ijp_detail.html">Position of city chief - Ambala</a>
                         <p>27-Jan-2023</p>
                       </div>
-                      <a href="" class="View_detail">View Detail</a>
+                      <a href="ijp_detail.html" class="View_detail">View Detail</a>
                     </div>
                   </div>
 
                   <div class="bottom_link">
-                    <a href="">View more posting</a>
+                    <a href="ijp_listing.html" target="_blank">View more posting</a>
                   </div>
                 </div>
 
@@ -601,14 +614,13 @@
                   </div>
 
                   <div class="link_tags">
-                    <a href="">HONO HR</a>
+                    <a href="search_archive.html">HONO HR</a>
                     <a href="">Web</a>
                     <a href="">Web DSR</a>
                     <a href="">My Travel Portal</a>
                     <a href="">Qlik View</a>
                     <a href="">IT Help Desk</a>
                     <a href="">Gmail Login</a>
-
                   </div>
                 </div>
               </div>
@@ -634,12 +646,29 @@
       </div>
     </div>
 
+    <!--Big Video Modal -->
+    <div class="modal fade" id="big_video" tabindex="-1" aria-labelledby="big_video" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <a href="#" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-circle"></i></a>
+          <div class="modal-body">
+            <video id="bigVideo" poster="assets/img/bgvideo.png">
+              <source src="assets/mov_bbb.mp4" type="video/mp4">
+              <source src="assets/img/videobg.png" type="video/ogg">
+              Your browser does not support HTML video.
+            </video>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
     <!-- ======= Footer ======= -->
     <footer id="footer" class="footer">
       <div class="container">
         <div class="footer-top">
           <div class="row align-items-center justify-content-center footer_top_row">
-            <div class="col-lg-2 col-md-4 footer-info col-6 col-6">
+            <div class="col-lg-2 col-md-4 footer-info col-6">
               <img src="assets/img/footer/dainik_bhaskar_logo.svg" class="img-fluid" alt="footer Image" />
             </div>
             <div class="col-lg-2 col-md-4 footer-info col-6">
@@ -706,7 +735,6 @@
           </div>
         </div>
       </div>
-
     </footer>
     <!-- End Footer -->
 

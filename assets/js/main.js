@@ -15,9 +15,23 @@ window.addEventListener("load", () => {
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: "auto",
   spaceBetween: 30,
+  autoplay: {
+    delay: 3000,
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+  },
+});
+
+// Search Archive Slider
+
+var swiper = new Swiper(".archive_swiper", {
+  spaceBetween: 50,
+  slidesPerView: 1,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 });
 
@@ -39,12 +53,16 @@ function playPause() {
   else myVideo1.pause();
 }
 
+$("#big_video").on("shown.bs.modal", function () {
+  $("#bigVideo")[0].play();
+});
+
 // Back to top
 
 var btn = $("#backtop");
 
 $(window).scroll(function () {
-  if ($(window).scrollTop() > 150) {
+  if ($(window).scrollTop() > 450) {
     btn.addClass("show");
   } else {
     btn.removeClass("show");
@@ -74,3 +92,22 @@ btn.on("click", function (e) {
 //     $(".stickthis").removeAttr("style");
 //   }
 // });
+
+// *******Custom Tabs*******
+
+$(".tab_content").hide();
+$(".tab_content:first").show();
+
+/* if in tab mode */
+$("ul.tabs li").click(function () {
+  $(".tab_content").hide();
+  var activeTab = $(this).attr("rel");
+  $("#" + activeTab).fadeIn();
+
+  $("ul.tabs li").removeClass("active");
+  $(this).addClass("active");
+
+  $(".tab_drawer_heading").removeClass("d_active");
+  $(".tab_drawer_heading[rel^='" + activeTab + "']").addClass("d_active");
+});
+// *****************

@@ -171,6 +171,15 @@ section {
 
 .navbar li {
   position: relative;
+
+}
+
+/* .navbar .dropdown-menu li.dropdown-item{
+  border-bottom: 1px solid #EBEBEB;
+}  */
+
+.navbar-expand-lg .navbar-nav .dropdown-item {
+  border-bottom: 1px solid #EBEBEB;
 }
 
 .navbar a:hover {
@@ -226,6 +235,10 @@ section {
   color: var(--white);
 }
 
+.navbar-nav:not(.sm-collapsible) .dropdown-item .sub-arrow, .navbar-nav:not(.sm-collapsible):not([data-sm-skip]) .dropdown-menu .dropdown-toggle::after {
+  border-left: 0.3em solid #BC2A2A;
+}
+
 /* ********************************* */
 
 #StartModal .modal-content .btn-close {
@@ -274,7 +287,7 @@ section {
 }
 
 .first_box {
-  margin: 0 10px 0 0;
+  margin: 0 0 0 0;
   padding: 15px 0 15px 0;
   background: #FFFFFF;
   border: 1px solid var(--border_color);
@@ -291,7 +304,7 @@ section {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 .Center_img {
@@ -330,6 +343,31 @@ section {
   width: 90%;
   margin: 0 auto;
   border-radius: 4px;
+}
+
+#big_video .modal-dialog .modal-content .modal-body {
+  padding: 0;
+}
+
+#big_video .modal-dialog .modal-content {
+  background-color: transparent;
+  border: 0;
+}
+
+#big_video .modal-dialog .modal-content .modal-body video {
+  width: 100%;
+  border-radius: 6px;
+}
+
+#big_video .modal-dialog .modal-content .btn-close {
+  position: absolute;
+  top: -31px;
+  right: -32px;
+  z-index: 1100;
+  opacity: 1;
+  color: white;
+  font-size: 23px;
+  background: none;
 }
 
 .slider_container {
@@ -373,7 +411,7 @@ section {
   line-height: 22px;
   text-align: center;
   text-transform: uppercase;
-  margin: 0 auto 5px auto;
+  margin: 0 auto 10px auto;
 }
 
 
@@ -394,8 +432,9 @@ section {
 .second_box .video_container {
   width: 100%;
   position: relative;
-  margin-bottom: 15px;
-  margin-top: 20px;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 22px 22px 15px 22px;
 }
 
 .second_box .icon_play {
@@ -417,7 +456,7 @@ section {
 }
 
 .second_box #bigVideo {
-  width: 93%;
+  width: 100%;
   margin: 0 auto;
   border-radius: 8px;
 }
@@ -442,7 +481,7 @@ section {
 
 .Listing_section .job_list_wrapper {
   margin: 0 auto;
-  padding: 17px 20px;
+  padding: 14px 20px 12px 20px;
 }
 
 
@@ -451,7 +490,7 @@ section {
   background-color: var(--white);
   border: 1px solid #EBEBEB;
   border-radius: 4px;
-  padding: 9px 10px;
+  padding: 8px 10px;
   text-align: left;
   display: flex;
   align-items: center;
@@ -459,8 +498,10 @@ section {
 }
 
 .Listing_section .job_list_wrapper .job_box:last-child {
-  margin: 0 0 0 0;
+  margin: 0;
 }
+
+
 
 .Listing_section .job_list_wrapper .title_left {
   display: block;
@@ -506,11 +547,11 @@ section {
 /* ************third_box**************** */
 
 .third_box {
-  margin: 0 10px;
+  margin: 0 0;
 }
 
 .login_sec {
-  margin: 0 0 30px 0;
+  margin: 0 0 27px 0;
   background: #FFFFFF;
   border: 1px solid #CDCDCD;
   border-radius: 10px;
@@ -767,7 +808,7 @@ section {
 }
 
 .footer .footer-top {
-  background: #f6f9ff;
+  background: var(--white);
   border: 1px solid var(--border_color);
   border-radius: 10px;
   padding: 15px 0 15px 0;
@@ -797,12 +838,12 @@ section {
   color: var(--black);
   margin: 0 0;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .footer_bottom .left_wrapp h5 span {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
   margin-left: 5px;
 }
 
@@ -813,7 +854,7 @@ section {
 
 .footer_bottom .left_wrapp .flex_link p {
   font-weight: 600;
-  font-size: 14px;
+  font-size: 13px;
   color: var(--red);
   margin: 0 0 0 21px;
 }
@@ -930,6 +971,10 @@ section {
   margin: 0;
 }
 
+.Emp_Tbl_sec .table-responsive {
+  overflow-x: auto;
+}
+
 .Emp_Tbl_sec .table>thead {
   background: #EAEAEA;
 }
@@ -947,6 +992,7 @@ section {
   padding: 10px 10px;
   vertical-align: middle;
   text-align: left;
+  white-space: nowrap;
 }
 
 .Emp_Tbl_sec .table tr .name_row {
@@ -972,7 +1018,8 @@ section {
 
 .badge_depart {
   background-color: #FEECEC;
-  font-weight: 500;
+  font-weight: 600;
+  color: #BC2A2A;
   font-size: 13px;
   border-radius: 15px;
   text-align: center;
@@ -1382,6 +1429,12 @@ section {
 .brand_content ul li {
   list-style: none;
   margin: 0 0 10px 0;
+  text-align: left;
+}
+
+.brand_content ul li a {
+  list-style: none;
+  margin: 0 0 10px 0;
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
@@ -1504,7 +1557,7 @@ section {
 
 .envelop_page .logos_list_wrapper .main_box .logo_whiteBox {
   padding: 15px 15px;
-  height: auto;
+  height: 340px;
 }
 
 .envelop_page .second_box {
@@ -1682,3 +1735,255 @@ section {
 
 /* ******************** */
 
+.policy_sec {
+  margin: 0;
+  padding: 25px 30px 7px 30px;
+}
+
+.policy_sec .policy_box {
+  margin: 0 0 21px 0;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+
+.policy_sec .policy_box:last-child {
+  margin: 0;
+}
+
+.policy_sec .inner_header {
+  margin: 0;
+  background: #EAEAEA;
+  border-radius: 8px 8px 0px 0px;
+  padding: 13px 30px;
+  text-align: left;
+}
+
+.policy_sec .inner_header h6 {
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 26px;
+  text-transform: capitalize;
+  color: #000000;
+  margin: 0;
+}
+
+.policy_sec .content {
+  padding: 15px 15px 15px 60px;
+}
+
+.policy_sec .content ul {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.policy_sec .content ul li {
+  list-style: none;
+  margin: 0 0 15px 0;
+  text-align: left;
+}
+
+.policy_sec .content ul li a {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 23px;
+  text-decoration-line: underline;
+  text-transform: capitalize;
+  color: #9D9D9D;
+  list-style: none;
+  margin: 0 0 15px 0;
+  text-align: left;
+}
+
+.policy_sec .content ul li:last-child {
+  margin: 0;
+}
+
+/* ****************** */
+
+.rate_card_sec {
+  padding: 20px 0 20px 0;
+}
+
+.outlook_page .listing_section .job_list .jobbox .col_detail h6 {
+  margin: 0;
+}
+
+.outlook_page .listing_section .job_list .jobbox {
+  align-items: center;
+}
+
+.outlook_page .listing_section .job_list .col-lg-6:nth-last-child(-n + 2) .jobbox {
+  margin: 0;
+}
+
+.outlook_page .listing_section .job_list .jobbox .col_detail {
+  margin: 0 20px 0 15px;
+}
+
+/* ************** */
+
+.archive_page .second_box {
+  padding: 0;
+}
+
+.archive_page .section_main .searchBox {
+  margin: 10px 20px 10px 20px;
+}
+
+.archive_page .section_main .searchBox .inputbox .lbl_inputbox {
+  text-align: left;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #8B8B8B;
+  display: block;
+}
+
+.archive_page .section_main .searchBox .inputbox .form-control .archive_page .section_main .searchBox .inputbox .form-select:focus, .archive_page .section_main .searchBox .inputbox .form-control:focus {
+  box-shadow: none;
+  outline: 0;
+}
+
+.archive_page .section_main .searchBox .inputbox .form-control {
+  border: 1px solid #CDCDCD;
+  border-radius: 4px;
+  height: 40px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #8B8B8B;
+}
+
+.archive_page .section_main .searchBox .inputbox .form-control::placeholder {
+  color: #8B8B8B;
+}
+
+.archive_page .searchBox .brand_content ul {
+  padding: 15px 18px 0px;
+}
+
+.archive_page .searchBox .flex_search {
+  display: flex;
+  align-content: center;
+}
+
+.archive_page .searchBox .flex_search .btn-outline-secondary {
+  background-color: var(--primary);
+  color: var(--white);
+  border: 1px solid var(--primary);
+  margin: 0 0 0 10px;
+}
+
+.archive_page .searchBox .flex_search .btn-outline-secondary:hover {
+  color: white;
+  background-color: #b16e00;
+}
+
+.archive_page .search_slider {
+  width: 100%;
+  height: 100%;
+}
+
+.archive_page .search_slider .swiper-button-next, .archive_page .search_slider .swiper-button-prev {
+  background-color: var(--primary);
+  color: var(--white);
+  border-radius: 50px;
+  width: 55px;
+  height: 55px;
+  transition: all 0.4s;
+}
+
+.archive_page .search_slider .swiper-button-next:hover, .archive_page .search_slider .swiper-button-prev:hover {
+  color: white;
+  background-color: #cf870f;
+}
+
+.archive_page .search_slider .swiper-button-next:after, .archive_page .search_slider .swiper-button-prev:after {
+  font-size: 16px;
+}
+
+.archive_page .search_slider .archive_swiper .swiper-slide {
+  height: 100%;
+}
+
+.archive_page .search_slider .archive_swiper .swiper-slide img {
+  border-radius: 10px;
+}
+
+
+/* ***************** */
+
+.convert_sec {
+  margin: 20px 25px;
+}
+
+.convert_sec .tab_sec .custom_tabs {
+  margin: 0;
+}
+
+.convert_sec .tab_sec .custom_tabs ul.tabs {
+  margin: 0;
+  list-style: none;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  background: #F3F4F6;
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.convert_sec .tab_sec .custom_tabs ul.tabs li {
+  margin: 0 10px 0 0;
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 0;
+  overflow: hidden;
+  position: relative;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  transition: all 0.4s;
+}
+
+.convert_sec .tab_sec .custom_tabs ul.tabs li:last-child {
+  margin: 0;
+}
+
+.tab_last {
+  border-right: 1px solid #333;
+}
+
+.convert_sec .tab_sec .custom_tabs ul.tabs li:hover {
+  background: white;
+  color: #333;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.convert_sec .tab_sec .custom_tabs ul.tabs li:first-child {
+  margin: 0 7px 0 0;
+}
+
+.convert_sec .tab_sec .custom_tabs ul.tabs li.active {
+  background: #FFFFFF;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.convert_sec .tab_container {
+  width: 100%;
+}
+
+.convert_sec .tab_content {
+  padding: 20px;
+  display: none;
+  text-align: left;
+}
+
+.convert_sec .tab_drawer_heading {
+  display: none;
+}
