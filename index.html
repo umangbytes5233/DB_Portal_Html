@@ -466,7 +466,7 @@
       <div class="section_main">
         <div class="container">
           <div class="main_row row">
-            <div class="col-lg-3 col-md-4 col-sm-12 ">
+            <div class="col-lg-3 col-md-4 col-sm-12 col_first_box ">
               <div class="first_box stickthis">
                 <h2>From the <br>Chairman’s Desk</h2>
 
@@ -505,16 +505,14 @@
                   <h2>From the MD’s Desk</h2>
                   <div class="video_container">
                     <a class="icon_play" href="#" data-bs-toggle="modal" data-bs-target="#video_MD"><i class="bi bi-play-circle"></i></a>
-                    <video id="video1" poster="assets/img/videobg.png">
-                      <source src="assets/mov_bbb.mp4" type="video/mp4">
-                      <source src="assets/img/videobg.png" type="video/ogg">
-                      Your browser does not support HTML video.
-                    </video>
+                    <div class="center_video_image">
+                      <img src="assets/img/videobg.png" class="img-fluid" />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 col-md-8 col-sm-12">
+            <div class="col-lg-6 col-md-8 col-sm-12 col_second_box">
               <div class="second_box">
 
                 <div class="video_container">
@@ -567,7 +565,7 @@
 
               </div>
             </div>
-            <div class="col-lg-3 col-md-12 col-sm-12">
+            <div class="col-lg-3 col-md-12 col-sm-12 col_third_box">
               <div class="third_box">
                 <div class="login_sec">
                   <div class="sec_header">
@@ -629,7 +627,7 @@
     <!-- End #main -->
 
     <!-- Modal -->
-    <div class="modal fade" id="StartModal" tabindex="-1" aria-labelledby="StartModalLabel" aria-hidden="true">
+    <div id="StartModal" class="modal fade" tabindex="-1" aria-labelledby="StartModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content">
           <a href="#" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-circle"></i></a>
@@ -648,7 +646,7 @@
         <div class="modal-content">
           <a href="#" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-circle"></i></a>
           <div class="modal-body">
-            <video id="bigVideo" poster="assets/img/bgvideo.png">
+            <video id="bigVideo">
               <source src="assets/video1.mp4" type="video/mp4">
               <source src="assets/img/videobg.png" type="video/ogg">
               Your browser does not support HTML video.
@@ -663,7 +661,7 @@
         <div class="modal-content">
           <a href="#" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-circle"></i></a>
           <div class="modal-body">
-            <video id="md_small_video" poster="assets/img/videobg.png">
+            <video id="md_small_video">
               <source src="assets/video3.mp4" type="video/mp4">
               <source src="assets/img/videobg.png" type="video/ogg">
               Your browser does not support HTML video.

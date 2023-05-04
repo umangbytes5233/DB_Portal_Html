@@ -7,9 +7,9 @@
     line-height: 32px;
   }
 
-  .first_box, .second_box, .third_box {
+  /* .first_box, .second_box, .third_box {
     margin: 0 0 20px 0 !important;
-  }
+  } */
 
   .login_sec:last-child {
     margin: 0;
@@ -24,9 +24,42 @@
     margin: 0 0 0 0;
   }
 
+  .sec_header h6,.sec_header a{
+    font-size: 17px;
+  }
+
+  .sec_header h6 i {
+    font-size: 17px;
+    margin: 0 8px 0 0;
+}
+
+.search_sec{
+  padding: 15px;
+}
+
+.search_form .search_form_row .form_btns .btn_primary, .search_form .search_form_row .form_btns .btn_danger {
+  margin: 0 5px 0 5px;
+  max-width: 100%;
+}
+
+
+
   .footer .footer-top .footer-info {
     text-align: center;
     margin-bottom: 30px;
+  }
+
+  .footer .footer-top .footer-info:nth-last-of-type(2), .footer .footer-top .footer-info:nth-last-of-type(1) {
+    margin: 0;
+  }
+
+  .footer .footer-top .footer-info img {
+    margin-bottom: 0;
+    max-width: 155px;
+  }
+
+  .footer_bottom .left_wrapp .flex_link p{
+    margin: 0 0 0 0;
   }
 
   .footer .group_wrapper .flex_group {
@@ -44,14 +77,17 @@
 
   .footer .group_wrapper .flex_group h6 {
     margin: 0 0 20px 0;
+    font-size: 20px;
   }
 
   .footer .group_wrapper .flex_group p.desc_group {
-    margin: 0 0 20px 0;
+    margin: 0 0 10px 0;
+    font-size: 18px;
   }
 
   .footer .group_wrapper .flex_group p.desc_group span {
     margin: 0 0 10px 0;
+    font-size: 20px;
   }
 
   .footer .group_wrapper .flex_group p.desc_group:last-child {
@@ -89,9 +125,9 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
-  .first_box, .second_box, .third_box {
+  /* .first_box, .second_box, .third_box {
     margin: 15px 0 0 0 !important;
-  }
+  } */
 
   .slider_container {
     margin: 15px 0 30px 0;
@@ -187,13 +223,41 @@
 }
 
 @media screen and (max-width: 991px) {
-  /* .mobile-nav-toggle {
-    display: block;
+
+  .section_main {
+    padding: 13px 0;
   }
 
-  .navbar ul {
+  .col_first_box {
     display: none;
-  } */
+  }
+
+  .col_second_box {
+    width: 100%;
+    order: 2;
+  }
+
+  .col_third_box {
+    order: 1;
+  }
+
+  .second_box .video_container {
+    padding: 0;
+    margin-bottom: 15px;
+  }
+
+  .second_box .video_container .center_video_image img {
+    width: 100%;
+  }
+
+
+  .footer {
+    margin: 10px 0 0 0;
+  }
+
+  .footer_bottom {
+    margin: 15px 0 0 0;
+  }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1024px) {

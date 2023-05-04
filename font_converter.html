@@ -496,16 +496,12 @@
                                 <div class="bottom_part">
                                     <h2>From the MD’s Desk</h2>
                                     <div class="video_container">
-                                        <button onclick="playPause1()" class="icon_play"><i class="bi bi-play-circle"></i></button>
-                                        <video id="video1" poster="assets/img/videobg.png">
-                                            <source src="assets/mov_bbb.mp4" type="video/mp4">
-                                            <source src="assets/img/videobg.png" type="video/ogg">
-                                            Your browser does not support HTML video.
-                                        </video>
+                                      <a class="icon_play" href="#" data-bs-toggle="modal" data-bs-target="#video_MD"><i class="bi bi-play-circle"></i></a>
+                                      <div class="center_video_image">
+                                        <img src="assets/img/videobg.png" class="img-fluid" />
+                                      </div>
                                     </div>
-
-
-                                </div>
+                                  </div>
                             </div>
                         </div>
                         <div class="col-lg-9 col-md-9 col-sm-12">
@@ -673,7 +669,20 @@
             </div>
         </main>
         <!-- End #main -->
-
+        <div id="video_MD" class="modal fade" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <a href="#" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-circle"></i></a>
+                    <div class="modal-body">
+                        <video id="md_small_video">
+                            <source src="assets/video3.mp4" type="video/mp4">
+                            <source src="assets/img/videobg.png" type="video/ogg">
+                            Your browser does not support HTML video.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- ======= Footer ======= -->
         <footer id="footer" class="footer">
             <div class="container">

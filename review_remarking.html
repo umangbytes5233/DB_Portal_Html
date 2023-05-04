@@ -21,7 +21,7 @@
         <!-- Vendor CSS Files -->
         <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
         <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
-        
+
         <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
         <link href="https://vjs.zencdn.net/8.3.0/video-js.css" rel="stylesheet" />
 
@@ -56,7 +56,7 @@
             <div class="main_nav">
                 <div class="container">
                     <nav class="navbar navbar-expand-lg" id="navbar">
-                        <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <i class="bi bi-list text-white"></i>
                         </button>
 
@@ -494,15 +494,11 @@
                                 <div class="bottom_part">
                                     <h2>From the MD’s Desk</h2>
                                     <div class="video_container">
-                                        <button onclick="playPause1()" class="icon_play"><i class="bi bi-play-circle"></i></button>
-                                        <video id="video1" poster="assets/img/videobg.png">
-                                            <source src="assets/mov_bbb.mp4" type="video/mp4">
-                                            <source src="assets/img/videobg.png" type="video/ogg">
-                                            Your browser does not support HTML video.
-                                        </video>
+                                        <a class="icon_play" href="#" data-bs-toggle="modal" data-bs-target="#video_MD"><i class="bi bi-play-circle"></i></a>
+                                        <div class="center_video_image">
+                                            <img src="assets/img/videobg.png" class="img-fluid" />
+                                        </div>
                                     </div>
-
-
                                 </div>
                             </div>
                         </div>
@@ -548,81 +544,94 @@
             </div>
         </main>
         <!-- End #main -->
-
+        <div id="video_MD" class="modal fade" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <a href="#" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-circle"></i></a>
+                    <div class="modal-body">
+                        <video id="md_small_video">
+                            <source src="assets/video3.mp4" type="video/mp4">
+                            <source src="assets/img/videobg.png" type="video/ogg">
+                            Your browser does not support HTML video.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- ======= Footer ======= -->
-    <footer id="footer" class="footer">
-        <div class="container">
-          <div class="footer-top">
-            <div class="row align-items-center justify-content-center footer_top_row">
-              <div class="col-lg-2 col-md-4 footer-info col-6">
-                <img src="assets/img/footer/dainik_bhaskar_logo.svg" class="img-fluid" alt="footer Image" />
-              </div>
-              <div class="col-lg-2 col-md-4 footer-info col-6">
-                <img src="assets/img/footer/divya_bhaskar_logo.svg" class="img-fluid" alt="footer Image" />
-              </div>
-              <div class="col-lg-2 col-md-4 footer-info col-6">
-                <img src="assets/img/footer/divya_marathi_logo.svg" class="img-fluid" alt="footer Image" />
-              </div>
-              <div class="col-lg-1 col-md-4 footer-info col-6">
-                <img src="assets/img/footer/fm.svg" class="img-fluid" alt="footer Image" />
-              </div>
-              <div class="col-lg-1 col-md-4 footer-info col-6">
-                <img src="assets/img/footer/dainik.svg" class="img-fluid" alt="footer Image" />
-              </div>
-              <div class="col-lg-1 col-md-4 footer-info col-6">
-                <img src="assets/img/footer/divya.svg" class="img-fluid" alt="footer Image" />
-              </div>
-            </div>
-  
-            <div class="group_wrapper">
-              <div class="flex_group">
-                <h6>India’s Largest Newspaper Group</h6>
-                <span>|</span>
-                <p class="desc_group"><span>12</span> States</p>
-                <span>|</span>
-                <p class="desc_group"><span>61</span> Editions</p>
-                <span>|</span>
-                <p class="desc_group"><span>03</span> Languages</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="footer_bottom">
-          <div class="container">
-            <div class="row footer_bottom_row">
-              <div class="col-lg-8 col-md-12">
-                <div class="left_wrapp">
-                  <h5>IT Support Contacts <span> | </span></h5>
-                  <div class="flex_link">
-                    <p>IT Help Desk: <span> 3010</span> </p>
-                    <p>Matrix Help: <span> 4139</span> </p>
-                    <p>SAP: <span> 1177</span> </p>
-                    <p>VDI: <span> 02266200820</span> </p>
-                    <p>Online Support </p>
-                  </div>
+        <footer id="footer" class="footer">
+            <div class="container">
+                <div class="footer-top">
+                    <div class="row align-items-center justify-content-center footer_top_row">
+                        <div class="col-lg-2 col-md-4 footer-info col-6">
+                            <img src="assets/img/footer/dainik_bhaskar_logo.svg" class="img-fluid" alt="footer Image" />
+                        </div>
+                        <div class="col-lg-2 col-md-4 footer-info col-6">
+                            <img src="assets/img/footer/divya_bhaskar_logo.svg" class="img-fluid" alt="footer Image" />
+                        </div>
+                        <div class="col-lg-2 col-md-4 footer-info col-6">
+                            <img src="assets/img/footer/divya_marathi_logo.svg" class="img-fluid" alt="footer Image" />
+                        </div>
+                        <div class="col-lg-1 col-md-4 footer-info col-6">
+                            <img src="assets/img/footer/fm.svg" class="img-fluid" alt="footer Image" />
+                        </div>
+                        <div class="col-lg-1 col-md-4 footer-info col-6">
+                            <img src="assets/img/footer/dainik.svg" class="img-fluid" alt="footer Image" />
+                        </div>
+                        <div class="col-lg-1 col-md-4 footer-info col-6">
+                            <img src="assets/img/footer/divya.svg" class="img-fluid" alt="footer Image" />
+                        </div>
+                    </div>
+
+                    <div class="group_wrapper">
+                        <div class="flex_group">
+                            <h6>India’s Largest Newspaper Group</h6>
+                            <span>|</span>
+                            <p class="desc_group"><span>12</span> States</p>
+                            <span>|</span>
+                            <p class="desc_group"><span>61</span> Editions</p>
+                            <span>|</span>
+                            <p class="desc_group"><span>03</span> Languages</p>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="col-lg-4 padding_left col-md-12">
-                <div class="right_wrapp">
-                  <div class="image_box">
-                    <img src="assets/img/footer/customer-service.svg" class="img-fluid" />
-                    <p>Help Desk</p>
-                  </div>
-                  <div class="image_box">
-                    <img src="assets/img/footer/education.svg" class="img-fluid" />
-                    <p>Knowledge Bhaskar</p>
-                  </div>
-                  <div class="image_box">
-                    <img src="assets/img/footer/advertising.svg" class="img-fluid" />
-                    <p>Whistle Blowing Policy</p>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </footer>
-      <!-- End Footer -->
+            <div class="footer_bottom">
+                <div class="container">
+                    <div class="row footer_bottom_row">
+                        <div class="col-lg-8 col-md-12">
+                            <div class="left_wrapp">
+                                <h5>IT Support Contacts <span> | </span></h5>
+                                <div class="flex_link">
+                                    <p>IT Help Desk: <span> 3010</span> </p>
+                                    <p>Matrix Help: <span> 4139</span> </p>
+                                    <p>SAP: <span> 1177</span> </p>
+                                    <p>VDI: <span> 02266200820</span> </p>
+                                    <p>Online Support </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 padding_left col-md-12">
+                            <div class="right_wrapp">
+                                <div class="image_box">
+                                    <img src="assets/img/footer/customer-service.svg" class="img-fluid" />
+                                    <p>Help Desk</p>
+                                </div>
+                                <div class="image_box">
+                                    <img src="assets/img/footer/education.svg" class="img-fluid" />
+                                    <p>Knowledge Bhaskar</p>
+                                </div>
+                                <div class="image_box">
+                                    <img src="assets/img/footer/advertising.svg" class="img-fluid" />
+                                    <p>Whistle Blowing Policy</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
 
         <!-- Back to Top -->
         <a href="#" id="backtop" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

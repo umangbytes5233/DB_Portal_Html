@@ -1,4 +1,25 @@
 /**
+ * Scrolls to an element with header offset
+ */
+
+var fixmeTop = $(".main_nav").offset().top;
+$(window).scroll(function () {
+  var currentScroll = $(window).scrollTop();
+  if (currentScroll >= fixmeTop) {
+    $(".main_nav").css({
+      position: "fixed",
+      top: "0",
+      left: "0",
+      width: "100%",
+    });
+  } else {
+    $(".main_nav").css({
+      position: "static",
+    });
+  }
+});
+
+/**
  * Modal Open when Page load
  */
 window.addEventListener("load", () => {
