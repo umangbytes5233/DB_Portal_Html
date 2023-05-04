@@ -44,17 +44,14 @@ function playPause1() {
   else myVideo.pause();
 }
 
-// Main Video
-
-var myVideo1 = document.getElementById("bigVideo");
-
-function playPause() {
-  if (myVideo1.paused) myVideo1.play();
-  else myVideo1.pause();
-}
+// Video
 
 $("#big_video").on("shown.bs.modal", function () {
   $("#bigVideo")[0].play();
+});
+
+$("#video_MD").on("shown.bs.modal", function () {
+  $("#md_small_video")[0].play();
 });
 
 // Back to top

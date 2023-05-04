@@ -18,6 +18,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
         <!-- Vendor CSS Files -->
         <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
         <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
@@ -56,7 +58,7 @@
             <div class="main_nav">
                 <div class="container">
                     <nav class="navbar navbar-expand-lg" id="navbar">
-                        <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <i class="bi bi-list text-white"></i>
                         </button>
 
@@ -523,17 +525,138 @@
                                                 <div class="tab_container">
                                                     <h3 class="d_active tab_drawer_heading" rel="tab1">Tab 1</h3>
                                                     <div id="tab1" class="tab_content">
-                                                        <h2>Tab 1 </h2>
+                                                        <div class="tab_content_heading">
+                                                            <div class="flex-tab">
+                                                                <h6><i class="bi bi-arrow-return-right"></i> चाणक्य => यूनिकोड से फ़ॉन्ट परिवर्तित (26-02-2023)</h6>
+                                                                <p><span>Last Update : </span> 26-02-2023 10:05 PM</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="divider_second"></div>
+                                                        <div class="form_box">
+                                                            <form>
+                                                                <div class="row font_row">
+                                                                    <div class="col-lg-12 col-md-12 col-12">
+                                                                        <div class="inputBox_col mb-4">
+                                                                            <label for="Chanakaya" class="form-label lbl_inputbox"><strong>Chanakaya</strong> Font Textbox </label>
+                                                                            <textarea class="form-control" id="Chanakaya" rows="7" placeholder="Enter your Text... "></textarea>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-12 col-md-12 col-12">
+                                                                        <div class="inputBox_col mb-4">
+                                                                            <label for="Unicode" class="form-label lbl_inputbox"><strong>Unicode</strong> Font Textbox </label>
+                                                                            <textarea class="form-control" id="Unicode" rows="7" placeholder="Enter your Text... "></textarea>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-12 col-md-12 col-12">
+                                                                        <div class="inputBox_col mb-2">
+                                                                            <label for="Kriti" class="form-label lbl_inputbox"><strong>Kriti</strong> Font Textbox </label>
+                                                                            <textarea class="form-control" id="Kriti" rows="7" placeholder="Enter your Text... "></textarea>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-12 col-md-12 col-12">
+                                                                        <div class="submit_btns text-center mb-1">
+                                                                            <p>अपनी भाषा का प्रयोग सुविधा का दूसरा नाम हे </p>
+                                                                            <a href="" class="btn btn_primary">Convert to Unicode and Kriti</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
                                                     </div>
                                                     <!-- #tab1 -->
                                                     <h3 class="tab_drawer_heading" rel="tab2">Tab 2</h3>
                                                     <div id="tab2" class="tab_content">
-                                                        <h2>Tab 2 </h2>
+                                                        <div class="tab_content_heading">
+                                                            <div class="flex-tab">
+                                                                <h6><i class="bi bi-arrow-return-right"></i> यूनिकोड => चाणक्य से फ़ॉन्ट परिवर्तित (27-01-2023 12:55)</h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="divider_second"></div>
+                                                        <div class="form_box">
+                                                            <form>
+                                                                <div class="row font_row">
+                                                                    <div class="col-lg-12 col-md-12 col-12">
+                                                                        <div class="inputBox_col mb-4">
+                                                                            <label for="Chanakaya" class="form-label lbl_inputbox"> Put the UNICODE Text ( plain text or HTML text) in the box below : </label>
+                                                                            <textarea class="form-control" id="Chanakaya" rows="7" placeholder="Enter Unicode Text (Plain text or Html Text) .... "></textarea>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-12 col-md-12 col-12">
+                                                                        <div class="inputBox_col mb-4">
+                                                                            <label for="Plain" class="form-label lbl_inputbox">The input given in the above box is :</label>
+                                                                            <select id="Plain" class="form-select">
+                                                                                <option selected>Plain Text</option>
+                                                                                <option>Option 1</option>
+                                                                                <option>Option 2</option>
+                                                                                <option>Option 3</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-lg-12 col-md-12 col-12">
+                                                                        <div class="submit_btns text-center mb-4">
+                                                                            <a href="" class="btn btn_primary">Convert to CHANAKYA Font</a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-12 col-md-12 col-12">
+                                                                        <div class="inputBox_col mb-1">
+                                                                            <label for="Unicode" class="form-label lbl_inputbox"> The above text converted to CHANAKAYA font is shown in the box below :</label>
+                                                                            <textarea class="form-control" id="Unicode" rows="7" placeholder="Preview of Converted Fonts... "></textarea>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
                                                     </div>
                                                     <!-- #tab2 -->
                                                     <h3 class="tab_drawer_heading" rel="tab3">Tab 3</h3>
                                                     <div id="tab3" class="tab_content">
-                                                        <h2>Tab 3 </h2>
+                                                        <div class="tab_content_heading">
+                                                            <div class="flex-tab">
+                                                                <h6><i class="bi bi-arrow-return-right"></i> Unicode and KritiDev Unicode Converter Download</h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="divider_second"></div>
+                                                        <div class="form_box">
+                                                            <form>
+                                                                <div class="row font_row">
+                                                                    <div class="col-lg-12 col-md-12 col-12">
+                                                                        <div class="inputBox_col mb-4">
+                                                                            <label for="Chanakaya" class="form-label lbl_inputbox"> <span>कृतिदेव</span> font Text-box <span>यहाँ पेस्ट करें</span> </label>
+                                                                            <textarea class="form-control" id="Chanakaya" rows="7" placeholder=" Paste here ..."></textarea>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-12 col-md-12 col-12">
+                                                                        <div class="inputBox_col mb-4">
+                                                                            <label for="Plain" class="form-label lbl_inputbox">The input given in the above box is :</label>
+                                                                            <select id="Plain" class="form-select">
+                                                                                <option selected>Plain Text</option>
+                                                                                <option>Option 1</option>
+                                                                                <option>Option 2</option>
+                                                                                <option>Option 3</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-lg-12 col-md-12 col-12">
+                                                                        <div class="submit_btns text-center mb-4">
+                                                                            <a href="#" class="btn btn_primary">Convert to Unicode <Span>यूनिकोड</Span></a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-12 col-md-12 col-12">
+                                                                        <div class="inputBox_col mb-4">
+                                                                            <label for="Unicode" class="form-label lbl_inputbox"> <Span>यूनिकोड</Span> font Text-box <span>यहाँ पेस्ट करें</span> </label>
+                                                                            <textarea class="form-control" id="Unicode" rows="7" placeholder="Paste Here .... "></textarea>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-12 col-md-12 col-12">
+                                                                        <div class="submit_btns text-center mb-1">
+                                                                            <a href="#" class="btn btn_primary">Convert to <span>कृतिदेव</span> </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
                                                     </div>
 
                                                 </div>

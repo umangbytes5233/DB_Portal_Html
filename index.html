@@ -72,12 +72,10 @@
       <div class="main_nav">
         <div class="container">
           <nav class="navbar navbar-expand-lg" id="navbar">
-            <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <i class="bi bi-list text-white"></i>
             </button>
-
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-
+            <div class="collapse navbar-collapse" id="navbarNavDropdown" data-bs-parent="#navbarNavDropdown">
               <!-- Left nav -->
               <ul class="nav navbar-nav mr-auto">
                 <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
@@ -456,7 +454,6 @@
                   </ul>
                 </li>
               </ul>
-
             </div>
           </nav>
         </div>
@@ -507,7 +504,7 @@
                 <div class="bottom_part">
                   <h2>From the MD’s Desk</h2>
                   <div class="video_container">
-                    <button class="icon_play" data-bs-toggle="modal" data-bs-target="#big_video"><i class="bi bi-play-circle"></i></button>
+                    <a class="icon_play" href="#" data-bs-toggle="modal" data-bs-target="#video_MD"><i class="bi bi-play-circle"></i></a>
                     <video id="video1" poster="assets/img/videobg.png">
                       <source src="assets/mov_bbb.mp4" type="video/mp4">
                       <source src="assets/img/videobg.png" type="video/ogg">
@@ -521,7 +518,7 @@
               <div class="second_box">
 
                 <div class="video_container">
-                  <button data-bs-toggle="modal" data-bs-target="#big_video" class="icon_play"><i class="bi bi-play-circle"></i></button>
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#big_video" class="icon_play"><i class="bi bi-play-circle"></i></a>
                   <div class="center_video_image">
                     <img src="assets/img/bgvideo.png" class="img-fluid" />
                   </div>
@@ -570,7 +567,7 @@
 
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="col-lg-3 col-md-12 col-sm-12">
               <div class="third_box">
                 <div class="login_sec">
                   <div class="sec_header">
@@ -646,19 +643,32 @@
       </div>
     </div>
 
-    <!--Big Video Modal -->
-    <div class="modal fade" id="big_video" tabindex="-1" aria-labelledby="big_video" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div id="big_video" class="modal fade" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content">
           <a href="#" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-circle"></i></a>
           <div class="modal-body">
             <video id="bigVideo" poster="assets/img/bgvideo.png">
-              <source src="assets/mov_bbb.mp4" type="video/mp4">
+              <source src="assets/video1.mp4" type="video/mp4">
               <source src="assets/img/videobg.png" type="video/ogg">
               Your browser does not support HTML video.
             </video>
           </div>
+        </div>
+      </div>
+    </div>
 
+    <div id="video_MD" class="modal fade" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <a href="#" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-circle"></i></a>
+          <div class="modal-body">
+            <video id="md_small_video" poster="assets/img/videobg.png">
+              <source src="assets/video3.mp4" type="video/mp4">
+              <source src="assets/img/videobg.png" type="video/ogg">
+              Your browser does not support HTML video.
+            </video>
+          </div>
         </div>
       </div>
     </div>
@@ -741,11 +751,9 @@
     <!-- Back to Top -->
     <a href="#" id="backtop" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-
     <!-- Vendor JS Files -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
-
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
     <!-- SmartMenus jQuery plugin -->

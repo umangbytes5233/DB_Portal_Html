@@ -335,6 +335,10 @@ section {
   margin: 0 auto;
 }
 
+.bottom_part .icon_play:hover {
+  color: var(--black);
+}
+
 .bottom_part .icon_play i {
   font-size: 40px;
 }
@@ -345,21 +349,33 @@ section {
   border-radius: 4px;
 }
 
-#big_video .modal-dialog .modal-content .modal-body {
+/* *********** */
+
+#big_video .modal-dialog .modal-content .modal-body, #video_MD .modal-dialog .modal-content .modal-body {
   padding: 0;
 }
 
-#big_video .modal-dialog .modal-content {
+#big_video .modal-dialog .modal-content, #video_MD .modal-dialog .modal-content {
   background-color: transparent;
   border: 0;
 }
 
-#big_video .modal-dialog .modal-content .modal-body video {
+#big_video .modal-dialog .modal-content .modal-body video, #video_MD .modal-dialog .modal-content .modal-body video {
   width: 100%;
   border-radius: 6px;
 }
 
-#big_video .modal-dialog .modal-content .btn-close {
+#big_video .modal-dialog .modal-content .btn-close:focus, #video_MD .modal-dialog .modal-content .btn-close:focus {
+  box-shadow: none;
+  outline: 0;
+  opacity: 0.8;
+}
+
+#big_video .modal-dialog .modal-content .btn-close:hover, #video_MD .modal-dialog .modal-content .btn-close:hover {
+  opacity: 0.8;
+}
+
+#big_video .modal-dialog .modal-content .btn-close, #video_MD .modal-dialog .modal-content .btn-close {
   position: absolute;
   top: -31px;
   right: -32px;
@@ -368,7 +384,10 @@ section {
   color: white;
   font-size: 23px;
   background: none;
+  transition: all 0.4s;
 }
+
+/* ********************* */
 
 .slider_container {
   width: 100%;
@@ -1212,11 +1231,22 @@ section {
 }
 
 .divider {
-  border: 1px solid var(--border_color);
+  border-bottom: 1px solid var(--border_color);
 }
 
 .divider_2 {
-  border: 1px solid #FDE3E3;
+  border-bottom: 1px solid #FDE3E3;
+}
+
+.divider_2:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 50%;
+  /* or 100px */
+  border-bottom: 1px solid magenta;
 }
 
 .job_insights {
@@ -1423,7 +1453,6 @@ section {
 .brand_content ul {
   padding: 5px 18px 0 18px;
   margin: 0;
-
 }
 
 .brand_content ul li {
@@ -1432,14 +1461,23 @@ section {
   text-align: left;
 }
 
+.brand_content ul li a i {
+  margin: 0 10px 0 0px;
+}
+
 .brand_content ul li a {
   list-style: none;
-  margin: 0 0 10px 0;
   font-weight: 600;
   font-size: 14px;
-  line-height: 19px;
+  line-height: 20px;
   text-align: left;
   color: #9D9D9D;
+  display: flex;
+  align-items: start;
+}
+
+.brand_content ul li a:last-child {
+  margin: 0;
 }
 
 .brand_content ul li:last-child {
@@ -1828,6 +1866,10 @@ section {
   padding: 0;
 }
 
+.archive_page .brand_content ul {
+  padding: 10px 18px 0 18px;
+}
+
 .archive_page .section_main .searchBox {
   margin: 10px 20px 10px 20px;
 }
@@ -1910,17 +1952,21 @@ section {
 
 .archive_page .search_slider .archive_swiper .swiper-slide img {
   border-radius: 10px;
+  height: 490px;
+  width: 100%;
+  object-fit: cover;
 }
 
 
 /* ***************** */
 
 .convert_sec {
-  margin: 20px 25px;
+  position: relative;
 }
 
 .convert_sec .tab_sec .custom_tabs {
   margin: 0;
+  padding: 15px 25px 1px 25px;
 }
 
 .convert_sec .tab_sec .custom_tabs ul.tabs {
@@ -1936,9 +1982,9 @@ section {
 }
 
 .convert_sec .tab_sec .custom_tabs ul.tabs li {
-  margin: 0 10px 0 0;
+  margin: 0 5px 0 0;
   cursor: pointer;
-  padding: 10px 20px;
+  padding: 10px 15px;
   border: 0;
   overflow: hidden;
   position: relative;
@@ -1964,7 +2010,7 @@ section {
 }
 
 .convert_sec .tab_sec .custom_tabs ul.tabs li:first-child {
-  margin: 0 7px 0 0;
+  margin: 0 5px 0 0;
 }
 
 .convert_sec .tab_sec .custom_tabs ul.tabs li.active {
@@ -1979,11 +2025,124 @@ section {
 }
 
 .convert_sec .tab_content {
-  padding: 20px;
+  padding: 15px 5px 3px 5px;
   display: none;
   text-align: left;
 }
 
 .convert_sec .tab_drawer_heading {
   display: none;
+}
+
+
+.convert_sec .tab_content .tab_content_heading .flex-tab {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.convert_sec .tab_content .tab_content_heading .flex-tab h6 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0.005em;
+  color: var(--primary);
+  margin: 0;
+  font-family: 'Baloo 2', cursive;
+}
+
+.convert_sec .tab_content .tab_content_heading .flex-tab h6 i {
+  margin: 0 7px 0 0;
+  font-size: 18px;
+  color: var(--primary);
+}
+
+.convert_sec .tab_content .tab_content_heading .flex-tab p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--black);
+  margin: 0;
+}
+
+.convert_sec .tab_content .tab_content_heading .flex-tab p span {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.005em;
+  color: var(--black);
+}
+
+.divider_second:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 110px;
+  height: 1px;
+  width: 100%;
+  border-bottom: 1px solid #FDE3E3;
+}
+
+.convert_sec .form_box {
+  margin: 25px 0 5px 0;
+}
+
+
+.convert_sec .form_box .search_form .search_form_row {
+  margin: 0;
+}
+
+.convert_sec .form_box .font_row .inputBox_col .lbl_inputbox {
+  text-align: left;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #333333;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.convert_sec .form_box .font_row .inputBox_col .lbl_inputbox strong {
+  font-weight: 700;
+}
+
+.convert_sec .form_box .font_row .inputBox_col .form-control, .convert_sec .form_box .font_row .inputBox_col .form-select {
+  border: 1px solid var(--border_color);
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  font-family: "Open Sans", sans-serif;
+}
+
+
+.convert_sec .form_box .font_row .inputBox_col .form-control:focus, .convert_sec .form_box .font_row .form-select:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.convert_sec .form_box .font_row .inputBox_col .form-control:hover, .convert_sec .form_box .font_row .form-select:hover {
+  outline: 0;
+}
+
+.convert_sec .form_box .font_row .submit_btns p {
+  margin: 0 0 12px 0;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 27px;
+  text-align: center;
+  letter-spacing: 0.005em;
+  font-family: 'Baloo 2', cursive;
+  color: #000000
+}
+
+.convert_sec .form_box .font_row .submit_btns .btn_primary {
+  margin: 0 auto;
+  display: block;
+  max-width: 300px;
+}
+
+.convert_sec .form_box .font_row .inputBox_col .lbl_inputbox span, .convert_sec .form_box .font_row .submit_btns a span {
+  font-family: 'Baloo 2', cursive;
 }
