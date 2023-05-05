@@ -1349,7 +1349,7 @@ section {
 }
 
 .apps_steps .step_sec {
-  background: #F3F4F6; 
+  background: #F3F4F6;
   border-radius: 8px;
   display: block;
   overflow: auto;
@@ -1713,7 +1713,7 @@ section {
 }
 
 .remark_sec .login_review .form_remarking {
-  margin: 30px;
+  margin: 15px 0;
 }
 
 .remark_sec .login_review .form_remarking .form_remark_row {
@@ -1727,7 +1727,7 @@ section {
 }
 
 .remark_sec .login_review .form_remarking .form_remark_row .inputBox_col {
-  margin: 0;
+  display: block;
 }
 
 .remark_sec .login_review .form_remarking .form_remark_row .lbl_inputbox {
