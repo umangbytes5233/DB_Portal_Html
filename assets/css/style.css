@@ -252,6 +252,7 @@ section {
 .modal_image img {
   margin: 0;
   width: 100%;
+  border-radius: 5px;
 }
 
 #StartModal .modal-content .btn-close {
@@ -1611,7 +1612,7 @@ section {
 
 /* **************** */
 
-.docs_list_page .second_box{
+.docs_list_page .second_box {
   padding: 0 0 0 0;
 }
 

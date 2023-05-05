@@ -45,6 +45,8 @@
     margin: 0;
   }
 
+
+
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 35px;
   }
@@ -208,7 +210,7 @@
   }
 
   .brand_content ul {
-    padding: 8px 7px 0 8px;
+    padding: 8px 7px 0 8px !important;
   }
 
   .brand_content ul li {
@@ -248,7 +250,13 @@
     width: 116px;
   }
 
+  .archive_page .section_main .searchBox {
+    margin: 6px 9px 6px 9px;
+  }
 
+  .archive_page .searchBox .flex_search .btn-outline-secondary {
+    margin: 0 0 0 4px;
+  }
 
 
   .policy_sec {
@@ -605,6 +613,11 @@
     padding: 0;
   }
 
+  .archive_page .search_slider .swiper-button-next, .archive_page .search_slider .swiper-button-prev {
+    width: 50px;
+    height: 50px;
+  }
+
   /* ********** */
 
   .visiting_card_page .logos_list_wrapper .logo_row .col-lg-6, .letter_head_page .logos_list_wrapper .logo_row .col-lg-6 {
@@ -954,18 +967,18 @@
     padding: 9px;
   }
 
-  #big_video .modal-dialog .modal-content, #video_MD .modal-dialog .modal-content {
+  #big_video .modal-dialog .modal-content, #video_MD .modal-dialog .modal-content, #StartModal .modal-dialog .modal-content, #video_MD .modal-dialog .modal-content {
     width: 90%;
     margin: 0 auto;
   }
 
-  #big_video .modal-dialog .modal-content .btn-close, #video_MD .modal-dialog .modal-content .btn-close {
+  #big_video .modal-dialog .modal-content .btn-close, #video_MD .modal-dialog .modal-content .btn-close, #StartModal .modal-dialog .modal-content .btn-close {
     top: -27px;
     right: -19px;
     font-size: 20px;
   }
 
-  .slider_container {
+  #StartModal .modal-dialog .modal-content .btn-close .slider_container {
     margin: 15px 0 20px 0;
   }
 

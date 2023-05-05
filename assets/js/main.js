@@ -23,7 +23,7 @@ $(window).scroll(function () {
  * Modal Open when Page load
  */
 window.addEventListener("load", () => {
-  // $("#StartModal").modal("show");
+  $("#StartModal").modal("show");
   if (window.location.hash) {
     if (select(window.location.hash)) {
       scrollto(window.location.hash);
