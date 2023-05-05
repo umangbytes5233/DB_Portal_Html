@@ -22,7 +22,7 @@
   }
 
   .Listing_section .job_list_wrapper {
-    padding: 14px 10px 14px 10px;
+    padding: 14px 10px 7px 10px;
   }
 
   /* .first_box, .second_box, .third_box {
@@ -55,6 +55,21 @@
     padding: 15px;
   }
 
+  .link_tags a {
+    margin: 0 5px 5px 0;
+    padding: 5px 8px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .btn_primary {
+    font-size: 14px;
+  }
+
+  .button_search {
+    margin: 8px 0 0 0;
+  }
+
   .search_form .search_form_row .form_btns .btn_primary, .search_form .search_form_row .form_btns .btn_danger {
     margin: 0 5px 0 5px;
     max-width: 100%;
@@ -64,7 +79,7 @@
 
   .footer .footer-top .footer-info {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
 
   .footer .footer-top .footer-info:nth-last-of-type(2), .footer .footer-top .footer-info:nth-last-of-type(1) {
@@ -77,7 +92,8 @@
   }
 
   .footer_bottom .left_wrapp .flex_link p {
-    margin: 0 0 0 0;
+    margin: 0 0 5px 0 !important;
+    width: 150px;
   }
 
   .footer .group_wrapper .flex_group {
@@ -94,25 +110,28 @@
   }
 
   .footer .group_wrapper .flex_group h6 {
-    margin: 0 0 20px 0;
-    font-size: 20px;
+    margin: 0 0 10px 0;
+    font-size: 18px;
   }
 
   .footer .group_wrapper .flex_group p.desc_group {
     margin: 0 15px 0 15px;
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .footer .group_wrapper .flex_group p.desc_group span {
-    margin: 0 0 10px 0;
-    font-size: 20px;
+    margin: 0 0 2px 0;
+    font-size: 17px;
   }
 
+  .footer .footer-top {
+    padding: 12px 0 12px 0;
+  }
 
 
   .footer_bottom {
     height: auto;
-    padding: 15px 0px;
+    padding: 10px 0px 10px 0px;
   }
 
   .footer_bottom .right_wrapp .image_box {
@@ -125,10 +144,19 @@
 
   .footer_bottom .left_wrapp h5 {
     font-size: 14px;
+    margin: 0px 0 10px 0;
   }
 
   .footer_bottom .left_wrapp {
-    margin: 0 0 15px 0;
+    margin: 0 0 5px 0;
+    display: block;
+  }
+
+
+  .footer_bottom .left_wrapp .flex_link {
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
   }
 
   .footer_bottom .left_wrapp h5 span {
@@ -138,6 +166,13 @@
   .footer_bottom .left_wrapp .flex_link p:first-child {
     margin: 0;
   }
+
+  .footer .group_wrapper {
+    margin: 10px 0 0 0;
+    padding: 10px 0 0 0;
+  }
+
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
@@ -218,7 +253,7 @@
     width: 38px;
   }
 
-  
+
 
 
 
@@ -248,14 +283,14 @@
 
   .main_nav .navbar {
     padding: 0;
-    
+
   }
 
-  .login_info{
+  .login_info {
     padding: 0 12px 12px 12px;
   }
 
-  
+
 
   .main_nav .navbar-toggler {
     display: none;
@@ -283,11 +318,11 @@
     width: 100%;
   }
 
-  .bg_area{
+  .bg_area {
     margin: 0 0 12px 0;
   }
 
-  .login_sec{
+  .login_sec {
     margin: 0 0 15px 0;
   }
 
@@ -301,6 +336,12 @@
   }
 }
 
+@media screen and (min-width: 992px) {
+  .humb_menu {
+    display: none;
+  }
+}
+ 
 @media screen and (min-width: 992px) and (max-width: 1024px) {
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 35px;
@@ -371,6 +412,58 @@
     margin: 0;
   }
 
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 35px;
+  }
+
+  .second_box .video_container {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 0;
+  }
+
+  .second_box .icon_play i {
+    font-size: 40px;
+  }
+
+  .col_first_box, .col_second_box, .col_third_box {
+    padding: 0 5px;
+  }
+
+  .Listing_section .job_list_wrapper {
+    padding: 11px 11px 11px 11px;
+  }
+
+  .link_tags {
+    padding: 8px 8px 5px 8px;
+  }
+
+  .slider_container .mySwiper .content p {
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0 auto 5px auto;
+  }
+
+  .section_main {
+    padding: 12px 0;
+  }
+
+  .first_box h2 {
+    font-size: 17px;
+  }
+
+  .second_box {
+    padding: 0 0 14px 0;
+  }
+
+  .bottom_part {
+    margin: 10px 10px 0 10px;
+  }
+
+  .login_sec {
+    margin: 0 0 13px 0;
+  }
+
   .link_tags a {
     margin: 0 5px 4px 0;
     border-radius: 20px;
@@ -399,12 +492,13 @@
 
   .footer_bottom {
     height: auto;
-    padding: 12px 0;
+    padding: 12px 0 0 0;
+    margin: 20px 0 0 0;
   }
 
   .footer_bottom .col-lg-8, .footer_bottom .col-lg-4 {
     width: 100% !important;
-    margin: 10px 0 5px 0;
+    margin: 0px 0 10px 0;
   }
 
   .footer_bottom .right_wrapp .image_box {
@@ -412,12 +506,16 @@
   }
 
   .footer_bottom .right_wrapp .image_box img {
-    width: 43px;
+    width: 38px;
   }
 
   .footer_bottom .right_wrapp .image_box:last-child {
     border-right: none;
     padding: 0 0 0 25px;
+  }
+
+  .footer_bottom .left_wrapp {
+    justify-content: center;
   }
 
 
