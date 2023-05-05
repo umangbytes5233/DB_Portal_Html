@@ -1611,8 +1611,12 @@ section {
 
 /* **************** */
 
+.docs_list_page .second_box{
+  padding: 0 0 0 0;
+}
+
 .second_box .listing_doc_sec {
-  margin: 15px 15px;
+  margin: 15px 15px 0 15px;
 }
 
 .second_box .listing_doc_sec .doc_list_row {
