@@ -77,9 +77,9 @@
     padding: 12px 0;
   }
 
-  .first_box h2 {
+  /* .first_box h2 {
     font-size: 17px;
-  }
+  } */
 
   .second_box {
     padding: 0 0 14px 0;
@@ -157,6 +157,89 @@
     font-size: 11px;
   }
 
+  .logos_list_wrapper .main_box .logo_whiteBox {
+    padding: 5px 20px;
+    margin-bottom: 10px;
+    height: 185px;
+  }
+
+  .logos_list_wrapper {
+    padding: 10px 8px 10px 8px;
+  }
+
+  .logos_list_wrapper .main_box .long_whitebox {
+    height: 120px !important;
+  }
+
+  .logos_list_wrapper .main_box {
+    padding: 8px 0;
+  }
+
+  .logos_list_wrapper .main_box .bottom_buttons p {
+    font-size: 11px;
+  }
+
+  .logos_list_wrapper .main_box .logo_whiteBox .ImageBox img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .logos_list_wrapper .main_box .bottom_buttons .btn_pdf, .logos_list_wrapper .bottom_buttons .btn_cdr {
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    max-width: 80px;
+    display: block;
+    padding: 5px 15px;
+    margin: 0 3px 0 3px;
+  }
+
+  .brand_sec h2, .brand_content h3 {
+    padding: 0 12px 15px 12px;
+  }
+
+  .brand_content h3 {
+    padding: 10px 12px 0 12px;
+  }
+
+  .brand_content ul {
+    padding: 8px 7px 0 8px;
+  }
+
+  .brand_content ul li {
+    margin: 0 0 7px 0;
+  }
+
+  .brand_content ul li a {
+    font-size: 13px;
+    line-height: 19px;
+  }
+
+  .convert_sec .tab_sec .custom_tabs {
+    padding: 13px 18px 1px 18px;
+  }
+
+  .convert_sec .tab_sec .custom_tabs ul.tabs {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .convert_sec .tab_sec .custom_tabs ul.tabs li {
+    padding: 10px 16px;
+    font-size: 13px;
+    margin: 0 15px 0 0;
+  }
+
+  .convert_sec .tab_content .tab_content_heading .flex-tab h6 {
+    font-size: 17px;
+    line-height: 18px;
+  }
+
+  .convert_sec .tab_content .tab_content_heading .flex-tab p {
+    font-size: 15px;
+  }
+
 
 
   .footer_bottom {
@@ -218,6 +301,15 @@
     line-height: 22px;
   }
 
+  .main_row .col_first_box, .main_row .col_second_box {
+    padding: 0 7px;
+
+  }
+
+  .logos_list_wrapper .main_box {
+    padding: 5px 0;
+  }
+
   .slider_container {
     margin: 15px 0 21px 0;
   }
@@ -265,6 +357,51 @@
     padding: 0 8px;
   }
 
+  .brand_sec h2, .brand_content h3 {
+    padding: 0 12px 15px 12px;
+  }
+
+  .brand_content h3 {
+    padding: 10px 12px 0 12px;
+  }
+
+  .brand_content ul {
+    padding: 8px 7px 0 8px;
+  }
+
+  .brand_content ul li {
+    margin: 0 0 7px 0;
+  }
+
+  .brand_content ul li a {
+    font-size: 13px;
+    line-height: 19px;
+  }
+
+  .convert_sec .tab_sec .custom_tabs {
+    padding: 13px 18px 1px 18px;
+  }
+
+  .convert_sec .tab_sec .custom_tabs ul.tabs {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .convert_sec .tab_sec .custom_tabs ul.tabs li {
+    padding: 10px 16px;
+    font-size: 13px;
+    margin: 0 15px 0 0;
+  }
+
+  .convert_sec .tab_content .tab_content_heading .flex-tab h6 {
+    font-size: 17px;
+    line-height: 18px;
+  }
+
+  .convert_sec .tab_content .tab_content_heading .flex-tab p {
+    font-size: 15px;
+  }
+
   .footer_bottom {
     height: auto;
     padding: 12px 0;
@@ -304,7 +441,7 @@
 @media screen and (max-width: 991.98px) {
 
   .section_main {
-    padding: 13px 0;
+    padding: 10px 0;
   }
 
   .right_logo {
@@ -313,6 +450,20 @@
 
   .main_nav .navbar {
     padding: 0;
+
+  }
+
+  .sec_header {
+    padding: 8px 15px;
+  }
+
+  .sec_header h6 {
+    font-size: 15px;
+
+  }
+
+  .sec_header h6 i {
+    font-size: 16px;
 
   }
 
@@ -365,8 +516,91 @@
     width: 45%;
   }
 
+  .logos_list_wrapper .main_box {
+    padding: 8px 0;
+  }
+
+  .logos_list_wrapper .main_box .logo_whiteBox {
+    padding: 0 12px;
+    margin-bottom: 10px;
+    height: 165px;
+  }
+
+  .logos_list_wrapper .main_box .long_whitebox {
+    height: 125px !important;
+  }
+
+  .logos_list_wrapper .main_box .bottom_buttons .btn_pdf, .logos_list_wrapper .bottom_buttons .btn_cdr {
+    font-size: 12px;
+    max-width: 77px;
+    padding: 4px 13px;
+    margin: 0 3px 0 3px;
+  }
+
+  .logos_list_wrapper {
+    padding: 10px 13px 10px 13px;
+  }
+
+  .letter_head_page .second_box:last-child {
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  /* ********** */
+
+  .visiting_card_page .logos_list_wrapper .logo_row .col-lg-6, .letter_head_page .logos_list_wrapper .logo_row .col-lg-6 {
+    padding: 0 10px 0 5px;
+  }
+
+  .visiting_card_page .logos_list_wrapper, .letter_head_page .logos_list_wrapper {
+    padding: 7px 8px 7px 10px;
+  }
+
+  .Id_card_page .logos_list_wrapper .main_box .logo_whiteBox {
+    padding: 8px 0;
+  }
+
+  .Id_card_page .logos_list_wrapper .main_box .logo_whiteBox {
+    margin-bottom: 17px;
+  }
+
+  .Id_card_page .logos_list_wrapper {
+    padding: 10px 13px 0 13px;
+  }
+
+  .convert_sec .tab_sec .custom_tabs {
+    padding: 13px 18px 1px 18px;
+  }
+
+  .convert_sec .tab_sec .custom_tabs ul.tabs {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .convert_sec .tab_sec .custom_tabs ul.tabs li {
+    padding: 10px 13px;
+    font-size: 13px;
+    margin: 0 0 0 0;
+  }
+
+  .convert_sec .tab_content .tab_content_heading .flex-tab h6 {
+    font-size: 17px;
+    line-height: 18px;
+  }
+
+  .convert_sec .tab_content .tab_content_heading .flex-tab p {
+    font-size: 15px;
+  }
+
+  .convert_sec .form_box .font_row .inputBox_col .lbl_inputbox {
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+
+  /* ********** */
+
   .footer {
-    margin: 10px 0 0 0;
+    margin: 0 0 0 0;
   }
 
   .footer_bottom {
@@ -403,8 +637,8 @@
   }
 
   .footer .footer-top .footer-info img {
-    margin-bottom: 25px;
-    max-width: 149px;
+    margin-bottom: 18px;
+    max-width: 138px;
   }
 
   .footer .footer-top .footer-info:nth-last-of-type(3) img, .footer .footer-top .footer-info:nth-last-of-type(1) img, .footer .footer-top .footer-info:nth-last-of-type(2) img {
@@ -412,7 +646,7 @@
   }
 
   .footer .footer-top {
-    padding: 15px 10px;
+    padding: 15px 0;
   }
 
   .footer .footer-top .footer-info {
@@ -509,6 +743,24 @@
     padding: 14px 10px 7px 10px;
   }
 
+  .listing_section .job_list .jobbox .col_detail {
+    margin: 0 0 0 10px;
+  }
+
+  .outlook_page .listing_section .job_list .jobbox .col_detail {
+    margin: 0 10px 0 10px;
+  }
+
+  .listing_section .job_list .jobbox .col_detail h6 {
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .pos_date {
+    right: 6px;
+    bottom: 6px;
+  }
+
   /* .first_box, .second_box, .third_box {
     margin: 0 0 20px 0 !important;
   } */
@@ -516,6 +768,71 @@
   /* .login_sec:last-child {
     margin: 0;
   } */
+
+  .convert_sec .tab_sec .custom_tabs {
+    padding: 13px 18px 1px 18px;
+  }
+
+  .convert_sec .tab_sec .custom_tabs ul.tabs {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  .convert_sec .tab_sec .custom_tabs ul.tabs li.active {
+    margin: 0;
+  }
+
+  .convert_sec .tab_content .tab_content_heading .flex-tab {
+    display: block;
+    text-align: left;
+  }
+
+
+
+  .divider_second:before {
+    display: none;
+  }
+
+  .convert_sec .tab_content .tab_content_heading .flex-tab h6 {
+    font-size: 17px;
+    line-height: 18px;
+    margin: 0 0 6px 0;
+  }
+
+  .convert_sec .tab_content .tab_content_heading .flex-tab p {
+    font-size: 15px;
+  } 
+
+  .convert_sec .form_box .font_row .inputBox_col .lbl_inputbox {
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+
+  .convert_sec .form_box .font_row .inputBox_col .form-control, .convert_sec .form_box .font_row .inputBox_col .form-select {
+    height: 110px;
+    resize: auto;
+  }
+
+  .listing_section .job_list {
+    margin: 9px 13px 0 13px;
+  }
+
+  .listing_section .job_list .col-lg-6 {
+    padding: 0 0;
+  }
+
+  .listing_section .job_list .jobbox {
+    padding: 10px 10px;
+    margin-bottom: 13px;
+  }
+
+  .listing_section .job_list .jobbox .col_icon .suitcase_icons {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    padding: 9px;
+  }
 
   #big_video .modal-dialog .modal-content, #video_MD .modal-dialog .modal-content {
     width: 90%;
@@ -537,6 +854,98 @@
     margin: 0 0 0 0;
   }
 
+  .job_detail_wrapper {
+    padding: 10px 0;
+  }
+
+  .job_detail_wrapper .top_title {
+    margin: 0;
+  }
+
+  .job_detail_wrapper .top_title h6 {
+    margin: 0 0 12px 15px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .job_insights .insight_row .col-lg-4 {
+    padding: 0;
+  }
+
+  .job_insights {
+    margin: 12px;
+  }
+
+  .job_insights .insight_row {
+    padding: 0;
+    margin: 0;
+
+  }
+
+  .flex_sight {
+    margin: 0 0 17px 0;
+  }
+
+  .Key_content {
+    margin: 12px 18px 12px 18px;
+  }
+
+  .Key_content .content_list ul {
+    margin: 0;
+  }
+
+  .Key_content h6 {
+    font-size: 17px;
+    line-height: 21px;
+  }
+
+  .Key_content .content_list ul li {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 5px 5px 0;
+  }
+
+  .Key_content .content_list ul li i {
+    margin: 0 5px 0 0;
+  }
+
+  .apps_steps {
+    margin: 6px 15px 6px 15px;
+  }
+
+  .apps_steps h6 {
+    font-size: 16px;
+    margin-bottom: 14px;
+  }
+
+  .apps_steps .step_sec {
+    margin: 0 0 18px 0;
+  }
+
+  .apps_steps .step_sec h6 {
+    font-size: 15px;
+    line-height: 21px;
+    margin: 7px 15px 7px 15px;
+  }
+
+  .apps_steps .step_sec .steps_content ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  .apps_steps .step_sec .steps_content {
+    padding: 10px 12px;
+  }
+
+  .apps_steps .step_sec .steps_content ul li {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 5px 5px 0;
+  }
+
+  .apps_steps .step_sec .steps_content ul li i {
+    margin: 0 5px 0 0;
+  }
 
 
   .search_sec {
@@ -563,8 +972,12 @@
     max-width: 100%;
   }
 
+  .envelop_page .logos_list_wrapper, .letter_head_page .logos_list_wrapper {
+    padding: 0;
+  }
 
 
+  /* ****************** */
   .footer .footer-top .footer-info {
     text-align: center;
     margin-bottom: 15px;
@@ -666,4 +1079,30 @@
 
 
 
-@media screen and (max-width:480px) {}
+@media screen and (max-width:480px) {
+  .logos_list_wrapper .main_box .logo_whiteBox {
+    height: 160px;
+  }
+
+  .logos_list_wrapper .main_box .long_whitebox {
+    height: 100px !important;
+  }
+
+  .logos_list_wrapper .main_box .bottom_buttons p {
+    display: none;
+  }
+
+  .visiting_card_page .logos_list_wrapper .main_box .bottom_buttons p, .envelop_page .logos_list_wrapper .main_box .bottom_buttons p {
+    display: block;
+  }
+}
+
+@media screen and (max-width:375px) {
+  .logos_list_wrapper .main_box .logo_whiteBox {
+    height: 133px;
+  }
+
+  .logos_list_wrapper .main_box .long_whitebox {
+    height: 100px !important;
+  }
+}
