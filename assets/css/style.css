@@ -1659,6 +1659,11 @@ section {
   position: relative;
   margin-bottom: 15px;
   margin-top: 0;
+  padding: 0;
+}
+
+.av_page .video_container .center_video_image img {
+  width: 100%;
 }
 
 .av_page .second_box {
@@ -1840,9 +1845,7 @@ section {
   align-items: center;
 }
 
-.outlook_page .listing_section .job_list .col-lg-6:nth-last-child(-n + 2) .jobbox {
-  margin: 0;
-}
+
 
 .outlook_page .listing_section .job_list .jobbox .col_detail {
   margin: 0 20px 0 15px;
