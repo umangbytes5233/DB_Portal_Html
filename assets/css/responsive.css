@@ -589,12 +589,20 @@
   }
 
   .convert_sec .tab_content .tab_content_heading .flex-tab p {
-    font-size: 15px;
+    font-size: 13px;
   }
 
   .convert_sec .form_box .font_row .inputBox_col .lbl_inputbox {
     font-size: 15px;
     margin-bottom: 8px;
+  }
+
+  .convert_sec .tab_content .tab_content_heading .flex-tab p span {
+    font-size: 13px;
+  }
+
+  .convert_sec .form_box {
+    margin: 8px 0 5px 0;
   }
 
   /* ********** */
@@ -802,14 +810,14 @@
 
   .convert_sec .tab_content .tab_content_heading .flex-tab p {
     font-size: 15px;
-  } 
-
-  .convert_sec .form_box .font_row .inputBox_col .lbl_inputbox {
-    font-size: 15px;
-    margin-bottom: 8px;
   }
 
-  .convert_sec .form_box .font_row .inputBox_col .form-control, .convert_sec .form_box .font_row .inputBox_col .form-select {
+  .convert_sec .form_box .font_row .inputBox_col .lbl_inputbox {
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+
+  .convert_sec .form_box .font_row .inputBox_col .form-control {
     height: 110px;
     resize: auto;
   }
