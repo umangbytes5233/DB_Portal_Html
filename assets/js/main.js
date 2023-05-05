@@ -19,6 +19,7 @@ $(window).scroll(function () {
   }
 });
 
+
 /**
  * Modal Open when Page load
  */
