@@ -1,11 +1,5 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 /* BEGIN Light */
+
 @font-face {
   font-family: 'Open Sans';
   src: url("../fonts/Light/OpenSans-Light.woff2") format("woff2"), url("../fonts/Bold/OpenSans-Bold.woff") format("woff");
@@ -14,6 +8,7 @@
 }
 
 /* BEGIN Regular */
+
 @font-face {
   font-family: 'Open Sans';
   src: url("../fonts/Regular/OpenSans-Regular.woff2") format("woff2"), url("../fonts/Regular/OpenSans-Regular.woff") format("woff");
@@ -22,6 +17,7 @@
 }
 
 /* BEGIN Semibold */
+
 @font-face {
   font-family: 'Open Sans';
   src: url("../fonts/Semibold/OpenSans-Semibold.woff2") format("woff2"), url("../fonts/Semibold/OpenSans-Semibold.woff") format("woff");
@@ -30,6 +26,7 @@
 }
 
 /* BEGIN Bold */
+
 @font-face {
   font-family: 'Open Sans';
   src: url("../fonts/Bold/OpenSans-Bold.woff2") format("woff2"), url("../fonts/Bold/OpenSans-Bold.woff2") format("woff");
@@ -38,12 +35,14 @@
 }
 
 /* BEGIN Extrabold */
+
 @font-face {
   font-family: 'Open Sans';
   src: url("../fonts/ExtraBold/OpenSans-ExtraBold.woff2") format("woff2"), url("../fonts/ExtraBold/OpenSans-ExtraBold.woff") format("woff");
   font-weight: 800;
   font-style: normal;
 }
+
 
 :root {
   scroll-behavior: smooth;
@@ -171,10 +170,6 @@ section {
   box-shadow: 0px 1px 8px 0 rgb(101 97 97 / 17%);
 }
 
-/* .container {
- max-width: 1330px;
-} */
-
 .top_header .center_title {
   font-weight: 700;
   font-size: 16px;
@@ -232,10 +227,6 @@ section {
 .navbar li {
   position: relative;
 }
-
-/* .navbar .dropdown-menu li.dropdown-item{
- border-bottom: 1px solid #EBEBEB;
-}  */
 
 .navbar-expand-lg .navbar-nav .dropdown-item {
   border-bottom: 1px solid #EBEBEB;
@@ -803,7 +794,6 @@ section {
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
-  /* identical to box height */
   color: #000000;
 }
 
@@ -888,9 +878,7 @@ section {
   transition: all 0.4s;
 }
 
-/* .link_tags a:last-child {
- margin: 0 0 0 0;
-} */
+
 
 .link_tags a:hover {
   color: white;
@@ -2064,7 +2052,8 @@ section {
   align-items: center;
 }
 
-.outlook_page .listing_section .job_list .col-lg-6:nth-last-child(2) .jobbox, .outlook_page .listing_section .job_list .col-lg-6:nth-last-child(1) .jobbox {
+.outlook_page .listing_section .job_list .col-lg-6:nth-last-child(2) .jobbox,
+.outlook_page .listing_section .job_list .col-lg-6:nth-last-child(1) .jobbox {
   margin-bottom: 0;
 }
 
@@ -2303,7 +2292,6 @@ section {
   letter-spacing: 0.005em;
   color: var(--primary);
   margin: 0;
-  font-family: 'Baloo 2', cursive;
 }
 
 .convert_sec .tab_content .tab_content_heading .flex-tab h6 i {

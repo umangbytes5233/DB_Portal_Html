@@ -3,7 +3,7 @@
     overflow-x: auto;
   }
 
-  .second_box .listing_doc_sec .doc_list_row .doc_box{
+  .second_box .listing_doc_sec .doc_list_row .doc_box {
     width: calc(120px - 15px);
   }
 }
@@ -34,7 +34,6 @@
   .sec_header h6 i {
     font-size: 19px;
   }
-
 
   .second_box .listing_doc_sec {
     margin: 15px 2px 10px 12px;
@@ -87,8 +86,6 @@
     margin-bottom: 14px;
   }
 
-
-
   .bg_icon {
     height: 44px;
     width: 44px;
@@ -133,7 +130,8 @@
     padding: 10px 13px 10px 13px;
   }
 
-  .logos_list_wrapper .main_box .bottom_buttons .btn_pdf, .logos_list_wrapper .bottom_buttons .btn_cdr {
+  .logos_list_wrapper .main_box .bottom_buttons .btn_pdf,
+  .logos_list_wrapper .bottom_buttons .btn_cdr {
     font-size: 14px;
     padding: 6px 15px;
     margin: 0 5px 0 3px;
@@ -251,8 +249,8 @@
   }
 
   /* .first_box h2 {
-   font-size: 17px;
- } */
+  font-size: 17px;
+} */
   .second_box {
     padding: 0 0 14px 0;
   }
@@ -415,8 +413,6 @@
   .convert_sec .tab_content .tab_content_heading .flex-tab p {
     font-size: 15px;
   }
-
-
 
   .archive_page .section_main .searchBox {
     margin: 6px 9px 6px 9px;
@@ -621,8 +617,6 @@
   .convert_sec .tab_content .tab_content_heading .flex-tab p {
     font-size: 15px;
   }
-
-
 
   .logos_list_wrapper .main_box .logo_whiteBox {
     padding: 0 20px;
@@ -941,8 +935,8 @@
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
 
   /* .first_box, .second_box, .third_box {
-   margin: 15px 0 0 0 !important;
- } */
+  margin: 15px 0 0 0 !important;
+} */
   .slider_container {
     margin: 15px 0 30px 0;
   }

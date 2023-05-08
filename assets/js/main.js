@@ -78,23 +78,7 @@ btn.on("click", function(e) {
       scrollTop: 0
    }, "150");
 });
-// *******Sticky Box When Scroll Page*******
-// var stickitLeft = $(".stickthis").offset.left;
-// var stickitWidth = $(".stickthis").width() + "px";
-// var stickySidebarToTop = $(".stickthis").offset().top;
-// $(window).scroll(function () {
-//   var windowToTop = $(window).scrollTop();
-//   if (windowToTop + 10 > stickySidebarToTop) {
-//     $(".stickthis").css({
-//       position: "fixed",
-//       top: "10px",
-//       left: stickitLeft,
-//       width: stickitWidth,
-//     });
-//   } else {
-//     $(".stickthis").removeAttr("style");
-//   }
-// });
+
 // *******Custom Tabs*******
 $(".tab_content").hide();
 $(".tab_content:first").show();
