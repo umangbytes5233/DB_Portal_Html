@@ -2,6 +2,10 @@
   .Emp_Tbl_sec .table-responsive {
     overflow-x: auto;
   }
+
+  .second_box .listing_doc_sec .doc_list_row .doc_box{
+    width: calc(120px - 15px);
+  }
 }
 
 @media screen and (max-width:1366px) {
@@ -31,16 +35,9 @@
     font-size: 19px;
   }
 
-  .second_box .listing_doc_sec .doc_list_row .doc_box {
-    width: 101px;
-  }
-
-  .second_box .listing_doc_sec .doc_list_row {
-    column-gap: 10px;
-  }
 
   .second_box .listing_doc_sec {
-    margin: 10px 10px 6px 10px;
+    margin: 15px 2px 10px 12px;
   }
 
   .second_box .video_container {
@@ -50,6 +47,56 @@
 
   .slider_container {
     margin: 15px 0 25px 0;
+  }
+
+  .job_insights {
+    margin: 10px 7px 15px 6px;
+  }
+
+  .flex_sight {
+    margin: 0 0 15px 0;
+  }
+
+  .job_insights .insight_row {
+    margin: 0;
+    align-items: center;
+  }
+
+  .job_detail_wrapper .top_title h6 {
+    font-size: 17px;
+    line-height: 18px;
+    margin: 0 0 14px 19px;
+  }
+
+  .Key_content {
+    margin: 10px 20px 10px 20px;
+  }
+
+  .Key_content h6 {
+    font-size: 17px;
+  }
+
+  .Key_content .content_list ul li {
+    font-size: 15px;
+    margin: 0 10px 8px 0;
+  }
+
+  .apps_steps h6 {
+    font-size: 17px;
+    line-height: 22px;
+    margin-bottom: 14px;
+  }
+
+
+
+  .bg_icon {
+    height: 44px;
+    width: 44px;
+  }
+
+  .apps_steps .step_sec h6 {
+    margin: 13px 10px 13px 16px;
+    font-size: 16px;
   }
 
   .Emp_Tbl_sec .table td {
@@ -62,6 +109,34 @@
 
   .sec_header {
     padding: 11px 15px;
+  }
+
+  .logos_list_wrapper .main_box .logo_whiteBox {
+    padding: 25px 25px;
+    margin-bottom: 15px;
+    height: 205px;
+  }
+
+  .second_box .listing_doc_sec .doc_list_row .doc_box {
+    width: calc(116px - 13px);
+  }
+
+  .logos_list_wrapper .main_box {
+    padding: 10px 0;
+  }
+
+  .logos_list_wrapper .main_box .long_whitebox {
+    height: 155px;
+  }
+
+  .logos_list_wrapper {
+    padding: 10px 13px 10px 13px;
+  }
+
+  .logos_list_wrapper .main_box .bottom_buttons .btn_pdf, .logos_list_wrapper .bottom_buttons .btn_cdr {
+    font-size: 14px;
+    padding: 6px 15px;
+    margin: 0 5px 0 3px;
   }
 
   .policy_sec .content ul li {
@@ -341,9 +416,7 @@
     font-size: 15px;
   }
 
-  .second_box .listing_doc_sec .doc_list_row .doc_box {
-    width: 116px;
-  }
+
 
   .archive_page .section_main .searchBox {
     margin: 6px 9px 6px 9px;
@@ -452,6 +525,14 @@
     margin: 15px 0 21px 0;
   }
 
+  .second_box .listing_doc_sec {
+    margin: 15px 10px 10px 10px;
+  }
+
+  .bottom_part .icon_play i {
+    font-size: 32px;
+  }
+
   .listing_section .job_list {
     margin: 12px 0 0 0;
   }
@@ -505,7 +586,7 @@
   }
 
   .brand_content ul {
-    padding: 8px 7px 0 8px;
+    padding: 8px 7px 0 8px !important;
   }
 
   .brand_content ul li {
@@ -541,9 +622,7 @@
     font-size: 15px;
   }
 
-  .second_box .listing_doc_sec .doc_list_row .doc_box {
-    width: 116px;
-  }
+
 
   .logos_list_wrapper .main_box .logo_whiteBox {
     padding: 0 20px;
@@ -567,6 +646,19 @@
 
   .logos_list_wrapper .main_box {
     padding: 5px 0 15px 0;
+  }
+
+  .flex_sight {
+    display: block;
+    margin: 0 0 10px 0;
+  }
+
+  .bg_icon {
+    margin-bottom: 10px;
+  }
+
+  .detail_content {
+    margin: 0 0 0 0;
   }
 
   .footer_bottom {
@@ -833,7 +925,7 @@
   }
 
   .second_box .listing_doc_sec .doc_list_row .doc_box {
-    width: 124px;
+    width: calc(114px - 14px);
   }
 
   /* ********** */
@@ -857,6 +949,10 @@
 
   .second_box .video_container {
     margin-bottom: 10px;
+  }
+
+  .second_box .listing_doc_sec {
+    margin: 15px 10px 10px 10px;
   }
 
   .footer_bottom {
@@ -988,12 +1084,10 @@
     bottom: 6px;
   }
 
-  /* .first_box, .second_box, .third_box {
-   margin: 0 0 20px 0 !important;
- } */
-  /* .login_sec:last-child {
-   margin: 0;
- } */
+  .second_box .listing_doc_sec .doc_list_row .doc_box {
+    width: calc(114px - 4px);
+  }
+
   .convert_sec .tab_sec .custom_tabs {
     padding: 13px 18px 1px 18px;
   }
@@ -1011,10 +1105,6 @@
   .convert_sec .tab_content .tab_content_heading .flex-tab {
     display: block;
     text-align: left;
-  }
-
-  .second_box .listing_doc_sec .doc_list_row .doc_box {
-    width: 140px;
   }
 
   .divider_second:before {
@@ -1201,6 +1291,10 @@
 
   .button_search {
     margin: 8px 0 0 0;
+  }
+
+  .second_box .listing_doc_sec {
+    margin: 15px 10px 10px 10px;
   }
 
   .search_form .search_form_row .form_btns .btn_primary,
