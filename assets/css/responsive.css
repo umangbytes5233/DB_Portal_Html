@@ -8,8 +8,8 @@
   }
 }
 
-@media screen and (min-width:1367px) and (max-width:1399px){
-  .Emp_Tbl_sec .table-responsive{
+@media screen and (min-width:1367px) and (max-width:1399px) {
+  .Emp_Tbl_sec .table-responsive {
     overflow-x: auto;
     display: block;
   }
@@ -18,6 +18,10 @@
 @media screen and (max-width:1366.98px) {
   .login_info {
     padding: 0 15px 15px 15px;
+  }
+
+  .convert_sec .tab_content .tab_content_heading .flex-tab p, .convert_sec .tab_content .tab_content_heading .flex-tab p span {
+    font-size: 14px;
   }
 
   .Emp_Tbl_sec .table-responsive {
@@ -32,6 +36,8 @@
   .av_page .video_container {
     margin-bottom: 0;
   }
+
+
 
   .sec_header h6,
   .sec_header a {
@@ -171,6 +177,18 @@
   .footer_bottom .right_wrapp .image_box img {
     width: 35px;
     margin: 0 8px 0 0;
+  }
+
+  .footer .group_wrapper .flex_group h6 {
+    font-size: 18px;
+  }
+
+  .footer .group_wrapper .flex_group p.desc_group {
+    font-size: 18px;
+  }
+
+  .footer .group_wrapper .flex_group p.desc_group span {
+    font-size: 18px;
   }
 }
 
@@ -702,9 +720,10 @@
 @media screen and (max-width: 991.98px) {
   .main_nav {
     z-index: 999;
-    position: fixed;
+    position: absolute;
     top: 58px;
     width: 100%;
+    
   }
 
   .section_main {
@@ -850,13 +869,15 @@
 
   .convert_sec .tab_sec .custom_tabs ul.tabs {
     width: 100%;
-    justify-content: center;
+    justify-content: start;
+
   }
 
   .convert_sec .tab_sec .custom_tabs ul.tabs li {
     padding: 10px 13px;
     font-size: 13px;
     margin: 0 0 0 0;
+
   }
 
   .convert_sec .tab_content .tab_content_heading .flex-tab h6 {
@@ -878,7 +899,7 @@
   }
 
   .convert_sec .form_box {
-    margin: 8px 0 5px 0;
+    margin: 25px 0 5px 0;
   }
 
   .rate_card_sec {
@@ -941,9 +962,10 @@
 
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
 
-  /* .first_box, .second_box, .third_box {
-  margin: 15px 0 0 0 !important;
-} */
+  .divider_second:before {
+    top: 108px;
+  }
+
   .slider_container {
     margin: 15px 0 30px 0;
   }
@@ -1094,9 +1116,11 @@
   }
 
   .convert_sec .tab_sec .custom_tabs ul.tabs {
-    width: 100%;
-    display: block;
-    text-align: center;
+    width: 477px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: -webkit-inline-box;
   }
 
   .convert_sec .tab_sec .custom_tabs ul.tabs li.active {
