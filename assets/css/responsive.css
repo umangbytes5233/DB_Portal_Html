@@ -717,17 +717,31 @@
   }
 }
 
+
+
 @media screen and (max-width: 991.98px) {
   .main_nav {
     z-index: 999;
     position: absolute;
     top: 58px;
     width: 100%;
-    
+  }
+
+  .navbar-collapse.show {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+    height: 406px;
+    overflow: scroll;
+  }
+
+  .navbar-nav {
+    padding-top: 11px;
+    padding-bottom: 11px;
   }
 
   .section_main {
-    padding: 70px 0 10px 0;
+    padding: 25px 0 10px 0;
   }
 
   .right_logo {
