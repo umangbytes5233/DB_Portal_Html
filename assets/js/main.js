@@ -1,3 +1,7 @@
+$(".menu").click(function () {
+  $(this).toggleClass("open");
+});
+
 /**
  * Easy selector helper function
  */

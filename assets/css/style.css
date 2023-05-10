@@ -206,9 +206,9 @@ section {
 .main_nav {
   background-color: white;
   box-shadow: 0 5px 5px 0px rgb(0 0 0 / 19%);
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  transition: all 0.4s;
+  -webkit-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  transition: all 0.1s;
 }
 
 #main {
@@ -936,6 +936,7 @@ section {
 
 .navbar-nav.sm-collapsible .sub-arrow {
   border: 0;
+  right: -20px;
 }
 
 /* ******Home Css ENds******* */
@@ -2393,4 +2394,111 @@ section {
 .convert_sec .form_box .font_row .inputBox_col .lbl_inputbox span,
 .convert_sec .form_box .font_row .submit_btns a span {
   font-family: 'Baloo 2', cursive;
+}
+
+.humb_menu {
+  position: relative;
+}
+
+.btn11 {
+  transition-duration: 0.5s;
+  height: 35px;
+  width: 45px;
+}
+
+.btn11 .icon-left {
+  transition-duration: 0.5s;
+  position: absolute;
+  height: 3px;
+  width: 0;
+  top: 16px;
+  background-color: #212121;
+}
+
+.btn11 .icon-left:before {
+  transition-duration: 0.5s;
+  position: absolute;
+  width: 10px;
+  height: 3px;
+  background-color: white;
+  content: "";
+  top: -8px;
+}
+
+.btn11 .icon-left:after {
+  transition-duration: 0.5s;
+  position: absolute;
+  width: 10px;
+  height: 3px;
+  background-color: white;
+  content: "";
+  top: 8px;
+}
+
+.btn11 .icon-left:hover {
+  cursor: pointer;
+}
+
+.btn11 .icon-right {
+  transition-duration: 0.5s;
+  position: absolute;
+  height: 3px;
+  width: 20px;
+  top: 16px;
+  background-color: white;
+  left: 13px;
+}
+
+.btn11 .icon-right:before {
+  transition-duration: 0.5s;
+  position: absolute;
+  width: 10px;
+  height: 3px;
+  background-color: white;
+  content: "";
+  top: -8px;
+}
+
+.btn11 .icon-right:after {
+  transition-duration: 0.5s;
+  position: absolute;
+  width: 10px;
+  height: 3px;
+  background-color: white;
+  content: "";
+  top: 8px;
+}
+
+.btn11.open .icon-left {
+  transition-duration: 0.5s;
+  background: transparent;
+}
+
+.btn11.open .icon-left:before {
+  transform: rotateZ(45deg) scaleX(1.4) translate(2px, 2px);
+  width: 9px;
+}
+
+.btn11.open .icon-left:after {
+  transform: rotateZ(-45deg) scaleX(1.4) translate(2px, -2px);
+  width: 9px;
+}
+
+.btn11.open .icon-right {
+  transition-duration: 0.5s;
+  background: transparent;
+}
+
+.btn11.open .icon-right:before {
+  transform: rotateZ(-45deg) scaleX(1.4) translate(-2px, 2px);
+  width: 9px;
+}
+
+.btn11.open .icon-right:after {
+  transform: rotateZ(45deg) scaleX(1.4) translate(-2px, -2px);
+  width: 9px;
+}
+
+.btn11:hover {
+  cursor: pointer;
 }
