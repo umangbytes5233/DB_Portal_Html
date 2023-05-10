@@ -867,6 +867,10 @@
     color: black;
   }
 
+  .navbar-expand-lg .navbar-nav .dropdown-item {
+    padding-left: 12px;
+  }
+
   .navbar-expand-lg .navbar-nav .dropdown-menu {
     background: transparent;
     border: 0;

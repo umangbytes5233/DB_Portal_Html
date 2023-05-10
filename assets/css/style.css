@@ -298,6 +298,9 @@ section {
   color: white !important;
 }
 
+
+
+
 .navbar-expand-lg .navbar-nav .dropdown-item:hover i {
   color: var(--black);
 }
