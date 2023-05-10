@@ -507,11 +507,20 @@
 }
 
 @media screen and (min-width: 992px) and (max-width: 1024px) {
+
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  #main {
+    flex: auto;
+  }
+
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 35px;
   }
-
-
 
   .first_box,
   .second_box,
@@ -889,7 +898,7 @@
     display: none;
   }
 
-  .visiting_card_page .col_first_box, .envelop_page .col_first_box, .letter_head_page .col_first_box, .Id_card_page .col_first_box {
+  .visiting_card_page .col_first_box, .envelop_page .col_first_box, .letter_head_page .col_first_box, .Id_card_page .col_first_box, .rate_card .col_first_box {
     display: block;
     margin-bottom: 19px;
   }
@@ -1088,6 +1097,8 @@
   .divider_second:before {
     top: 108px;
   }
+
+  
 
   .slider_container {
     margin: 15px 0 30px 0;
