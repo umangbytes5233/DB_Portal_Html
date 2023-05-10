@@ -548,6 +548,14 @@
     padding-right: 35px;
   }
 
+  .archive_page .section_main .searchBox {
+    margin: 10px;
+  }
+
+  .archive_page .searchBox .flex_search {
+    margin-bottom: 13px !important;
+  }
+
   .first_box,
   .second_box,
   .third_box {
@@ -857,7 +865,7 @@
     padding-left: 12px;
     border-bottom: 1px solid #dfcdcd;
   }
- 
+
   .navbar-expand-lg .navbar-nav .nav-item.show .nav-link {
     background-color: #eaeaea !important;
     padding-left: 12px;
@@ -1248,6 +1256,20 @@
     letter-spacing: 0.3em;
   }
 
+  .search_form .search_form_row .inputBox_col .form-control, .search_form .search_form_row .inputBox_col .form-select {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+
+  .search_form .search_form_row .inputBox_col .lbl_inputbox {
+    margin-bottom: 5px;
+    font-size: 13px;
+  }
+
+  .search_form .search_form_row .inputBox_col {
+    margin-bottom: 10px !important;
+  }
+
   .login_sec {
     margin: 0 0 15px 0;
   }
@@ -1477,7 +1499,7 @@
     line-height: 18px;
   }
 
-  .btn_primary {
+  .btn_primary, .btn_danger {
     font-size: 14px;
   }
 
@@ -1651,6 +1673,22 @@
     height: 133px;
   }
 
+  .second_box .icon_play i {
+    font-size: 27px;
+    color: var(--white);
+  }
+
+  a.logo.d-flex.align-items-center img {
+    max-width: 70px;
+  }
+
+  .footer_bottom .right_wrapp .image_box p {
+    font-size: 11px;
+    line-height: 13px;
+  }
+
+
+
   .logos_list_wrapper .main_box .long_whitebox {
     height: 100px !important;
   }
@@ -1660,9 +1698,9 @@
   }
 
   .top_header .center_title {
-    font-size: 10px;
+    font-size: 9px;
     line-height: 0;
-    letter-spacing: 0.3em;
+    letter-spacing: 2px;
   }
 
   .group_wrapper .flex_group h6 {
