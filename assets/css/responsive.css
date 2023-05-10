@@ -20,7 +20,8 @@
     padding: 0 15px 15px 15px;
   }
 
-  .convert_sec .tab_content .tab_content_heading .flex-tab p, .convert_sec .tab_content .tab_content_heading .flex-tab p span {
+  .convert_sec .tab_content .tab_content_heading .flex-tab p,
+  .convert_sec .tab_content .tab_content_heading .flex-tab p span {
     font-size: 14px;
   }
 
@@ -36,8 +37,6 @@
   .av_page .video_container {
     margin-bottom: 0;
   }
-
-
 
   .sec_header h6,
   .sec_header a {
@@ -126,8 +125,6 @@
     margin-bottom: 15px;
     height: 205px;
   }
-
-
 
   .logos_list_wrapper .main_box {
     padding: 10px 0;
@@ -272,7 +269,7 @@
   }
 
   /* .first_box h2 {
-  font-size: 17px;
+ font-size: 17px;
 } */
   .second_box {
     padding: 0 0 14px 0;
@@ -507,7 +504,6 @@
 }
 
 @media screen and (min-width: 992px) and (max-width: 1024px) {
-
   body {
     display: flex;
     min-height: 100vh;
@@ -898,7 +894,11 @@
     display: none;
   }
 
-  .visiting_card_page .col_first_box, .envelop_page .col_first_box, .letter_head_page .col_first_box, .Id_card_page .col_first_box, .rate_card .col_first_box {
+  .visiting_card_page .col_first_box,
+  .envelop_page .col_first_box,
+  .letter_head_page .col_first_box,
+  .Id_card_page .col_first_box,
+  .rate_card .col_first_box {
     display: block;
     margin-bottom: 19px;
   }
@@ -1004,14 +1004,12 @@
   .convert_sec .tab_sec .custom_tabs ul.tabs {
     width: 100%;
     justify-content: start;
-
   }
 
   .convert_sec .tab_sec .custom_tabs ul.tabs li {
     padding: 10px 13px;
     font-size: 13px;
     margin: 0 0 0 0;
-
   }
 
   .convert_sec .tab_content .tab_content_heading .flex-tab h6 {
@@ -1085,20 +1083,15 @@
     margin: 0 0 0 0;
   }
 
-
-
   .footer_bottom {
     margin: 15px 0 0 0;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
-
   .divider_second:before {
     top: 108px;
   }
-
-  
 
   .slider_container {
     margin: 15px 0 30px 0;
@@ -1564,8 +1557,6 @@
   }
 }
 
-
-
 @media screen and (max-width:480px) {
   .logos_list_wrapper .main_box .logo_whiteBox {
     height: 160px;
@@ -1603,7 +1594,6 @@
   }
 
   .second_box .listing_doc_sec .doc_list_row {
-
     column-gap: 11px;
   }
 

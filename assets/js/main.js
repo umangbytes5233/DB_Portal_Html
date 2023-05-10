@@ -9,7 +9,6 @@ const select = (el, all = false) => {
     return document.querySelector(el);
   }
 };
-
 /**
  * Easy event listener function
  */
@@ -20,32 +19,27 @@ const on = (type, el, listener, all = false) => {
     select(el, all).addEventListener(type, listener);
   }
 };
-
 /**
  * Easy on scroll event listener
  */
 const onscroll = (el, listener) => {
   el.addEventListener("scroll", listener);
 };
-
 /**
  * Scrolls to an element with header offset
  */
 const scrollto = (el) => {
   let header = select("#main_nav");
   let offset = header.offsetHeight;
-
   if (!header.classList.contains("header-scrolled")) {
     offset -= 10;
   }
-
   let elementPos = select(el).offsetTop;
   window.scrollTo({
     top: elementPos - offset,
     behavior: "smooth",
   });
 };
-
 /**
  * Toggle .header-scrolled class to #header when page is scrolled
  */
@@ -81,7 +75,6 @@ if (selectHeader) {
 //     });
 //   }
 // });
-
 /**
  * Modal Open when Page load
  */
@@ -146,7 +139,6 @@ btn.on("click", function (e) {
     "150"
   );
 });
-
 // *******Custom Tabs*******
 $(".tab_content").hide();
 $(".tab_content:first").show();

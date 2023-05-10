@@ -43,7 +43,6 @@
   font-style: normal;
 }
 
-
 :root {
   scroll-behavior: smooth;
   --primary: #FF9F00;
@@ -216,7 +215,6 @@ section {
   padding-top: 51px;
 }
 
-
 .fixed-top {
   position: fixed;
   top: 60px;
@@ -253,8 +251,6 @@ section {
   border-bottom: 1px solid #d7c8c8;
 }
 
-
-
 .navbar a:hover {
   color: black;
 }
@@ -271,8 +267,6 @@ section {
 .navbar-expand-lg .navbar-nav .nav-item .nav-link:first-of-type {
   padding-left: 0;
 }
-
-
 
 .navbar-expand-lg .navbar-nav .dropdown-menu {
   background: #F8EDE3;
@@ -1837,7 +1831,6 @@ section {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
   border-radius: 7px;
   padding: 10px 5px;
-
 }
 
 .second_box .listing_doc_sec .doc_list_row .doc_box img {
@@ -2065,8 +2058,6 @@ section {
   -ms-flex-align: center;
   align-items: center;
 }
-
-
 
 .outlook_page .listing_section .job_list .jobbox .col_detail {
   margin: 0 20px 0 15px;
