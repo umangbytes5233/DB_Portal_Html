@@ -282,7 +282,7 @@ section {
 
 .navbar-expand-lg .navbar-nav .dropdown-item {
   padding: 10px 10px;
-  font-size: 14px;
+  font-size: 14px; 
   text-transform: none;
   font-weight: 600;
   color: black;
@@ -953,7 +953,7 @@ section {
   font-size: 14px;
 }
 
-.footer .footer-top {
+.footer-top {
   background: var(--white);
   border: 1px solid var(--border_color);
   border-radius: 10px;
@@ -1034,11 +1034,11 @@ section {
   color: var(--black);
 }
 
-.footer .footer-top .footer-info {
+.footer-top .footer-info {
   text-align: center;
 }
 
-.footer .footer-top .footer-info img {
+.footer-top .footer-info img {
   margin-bottom: 0;
 }
 
@@ -1091,13 +1091,13 @@ section {
   margin: 0;
 }
 
-.footer .group_wrapper {
+.group_wrapper {
   margin: 15px 0 0 0;
   padding: 15px 0 0 0;
   border-top: 1px solid var(--border_color);
 }
 
-.footer .group_wrapper .flex_group {
+.group_wrapper .flex_group {
   margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1110,7 +1110,7 @@ section {
   justify-content: center;
 }
 
-.footer .group_wrapper .flex_group h6 {
+.group_wrapper .flex_group h6 {
   font-weight: 600;
   font-size: 22px;
   line-height: 19px;
@@ -1118,11 +1118,11 @@ section {
   margin: 0;
 }
 
-.footer .group_wrapper .flex_group span {
+.group_wrapper .flex_group span {
   margin: 0px 15px 0 15px;
 }
 
-.footer .group_wrapper .flex_group p.desc_group {
+.group_wrapper .flex_group p.desc_group {
   font-weight: 700;
   font-size: 22px;
   line-height: 19px;
@@ -1130,7 +1130,7 @@ section {
   margin: 0 0 0 0;
 }
 
-.footer .group_wrapper .flex_group p.desc_group span {
+.group_wrapper .flex_group p.desc_group span {
   font-weight: 700;
   font-size: 22px;
   line-height: 19px;
