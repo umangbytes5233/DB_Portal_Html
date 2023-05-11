@@ -1746,12 +1746,21 @@
   }
 
   .sec_header {
-    padding: 9px 7px;
+    padding: 9px 14px;
   }
 
   .second_box .icon_play i {
     font-size: 27px;
     color: var(--white);
+  }
+  .Emp_Tbl_sec .table th{
+    font-size: 13px;
+    line-height: 20px;
+    color: #2E2E2E;
+    padding: 10px 10px 10px 10px;
+  }
+  .Emp_Tbl_sec .table th:first-child{
+    padding: 10px 10px 10px 10px;
   }
 
   a.logo.d-flex.align-items-center img {
