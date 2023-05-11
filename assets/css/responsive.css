@@ -1236,6 +1236,32 @@
     line-height: 32px;
   }
 
+  .Emp_Tbl_sec .table td {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+
+  .Emp_Tbl_sec .table tr .name_row .profile_pic {
+    height: 33px;
+    width: 33px;
+    margin: 0 7px 0 0;
+  }
+
+  .badge_depart {
+    padding: 3px 10px;
+    font-size: 12px;
+  }
+
+  .badge_desgnation {
+    padding: 3px 10px;
+    font-size: 12px;
+  }
+
+  .Emp_Tbl_sec .table tr .name_row p {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
   .sec_header {
     padding: 9px 15px;
   }
@@ -1326,9 +1352,13 @@
   }
 
   .convert_sec .tab_content .tab_content_heading .flex-tab h6 {
-    font-size: 17px;
-    line-height: 18px;
-    margin: 0 0 6px 0;
+    font-size: 15px;
+    line-height: 19px;
+    margin: 0 0 5px 0;
+  }
+
+  .convert_sec .form_box {
+    margin: 15px 0 5px 0;
   }
 
   .convert_sec .tab_content .tab_content_heading .flex-tab p {
@@ -1636,6 +1666,16 @@
     display: none;
   }
 
+  .convert_sec .tab_sec .custom_tabs {
+    padding: 13px 8px 1px 8px;
+  }
+
+  .convert_sec .form_box .font_row .inputBox_col .form-control {
+    height: 100px;
+    resize: auto;
+    padding: 5px 4px;
+  }
+
   .visiting_card_page .logos_list_wrapper .main_box .bottom_buttons p,
   .envelop_page .logos_list_wrapper .main_box .bottom_buttons p {
     display: block;
@@ -1671,6 +1711,42 @@
 @media screen and (max-width:375.98px) {
   .logos_list_wrapper .main_box .logo_whiteBox {
     height: 133px;
+  }
+
+  .sec_header h6, .sec_header a {
+    font-size: 13px;
+    letter-spacing: 0;
+  }
+
+  .sec_header h6 i {
+    font-size: 15px;
+    margin: 0 5px 0 0;
+  }
+
+  .brand_sec h2 {
+    padding: 0 16px 9px 16px;
+    font-size: 17px;
+  }
+
+  .brand_content h3 {
+    padding: 8px 16px 0 16px;
+    font-size: 17px;
+  }
+
+  .brand_content ul {
+    padding: 10px 12px 0 12px;
+  }
+
+  .brand_content ul li a {
+    font-size: 13px;
+  }
+
+  .brand_content ul li {
+    margin: 0 0 7px 0;
+  }
+
+  .sec_header {
+    padding: 9px 7px;
   }
 
   .second_box .icon_play i {

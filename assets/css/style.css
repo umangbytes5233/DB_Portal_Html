@@ -1218,7 +1218,7 @@ section {
 }
 
 .badge_desgnation {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 13px;
   background-color: var(--primary);
   border-radius: 15px;
